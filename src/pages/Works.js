@@ -86,7 +86,6 @@ function Works() {
                     trigger: desc,
                     start: "top 85%",
                     end: "bottom top",
-                    markers: true
                 }
             });
         });

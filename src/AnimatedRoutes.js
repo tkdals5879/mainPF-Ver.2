@@ -37,7 +37,7 @@ function AnimatedRoutes() {
             });
         }
 
-    }, [pathname])
+    }, [pathname,currentPage])
 
     useEffect(() => {
         gsap.fromTo(containerRef.current,

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useLayoutEffect } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Footer from '../component/Footer'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,7 +20,7 @@ function Main() {
             console.log(show)
         }, 200)
         return () => clearTimeout(delay)
-    }, []);
+    }, [show]);
 
     const topText = "PORTFOLIO VER.2".split("")
     const bottomText = "DEVELOPER".split("")
@@ -59,7 +59,7 @@ function Main() {
 
 
     // section03 box timeline gsap ▼
-    useLayoutEffect(() => {
+    useEffect(() => {
         const ani1 = gsap.timeline();
         ani1.from('#section03 .HorizontalScrollBoxes .boxA', { y: -100, autoAlpha: 0 })
             .from('#section03 .HorizontalScrollBoxes .boxB', { y: -100, autoAlpha: 0 })
@@ -71,7 +71,6 @@ function Main() {
             end: "+=3000",
             scrub: true,
             pin: true,
-            markers: false,
             animation: ani1
         })
 
@@ -251,7 +250,7 @@ function Main() {
                                                 작업기간 : 4~5주</p>
                                         </div>
                                     </div>
-                                    <a href="https://kboproject2.netlify.app/" target='_blank'>
+                                    <a href="https://kboproject2.netlify.app/" target='_blank' rel="noreferrer">
                                         <div className='viewWrap'>
                                             <button className='view'>View</button>
                                             <button className='viewArrow'><FontAwesomeIcon icon={faArrowRight} /></button>
@@ -298,7 +297,7 @@ function Main() {
                                                 작업기간 : 4주</p>
                                         </div>
                                     </div>
-                                    <a href="https://sangmin-mainsite.netlify.app/" target='_blank'>
+                                    <a href="https://sangmin-mainsite.netlify.app/" target='_blank' rel="noreferrer">
                                         <div className='viewWrap'>
                                             <button className='view'>View</button>
                                             <button className='viewArrow'><FontAwesomeIcon icon={faArrowRight} /></button>
@@ -344,7 +343,7 @@ function Main() {
                                                 작업기간 : 3주</p>
                                         </div>
                                     </div>
-                                    <a href="https://sangmin-weatherproject.netlify.app" target='_blank'>
+                                    <a href="https://sangmin-weatherproject.netlify.app" target='_blank' rel="noreferrer">
                                         <div className='viewWrap'>
                                             <button className='view'>View</button>
                                             <button className='viewArrow'><FontAwesomeIcon icon={faArrowRight} /></button>
@@ -386,7 +385,7 @@ function Main() {
                                                 작업기간 : 2주</p>
                                         </div>
                                     </div>
-                                    <a href="https://clone-mimodern.netlify.app" target='_blank'>
+                                    <a href="https://clone-mimodern.netlify.app" target='_blank' rel="noreferrer">
                                         <div className='viewWrap'>
                                             <button className='view'>View</button>
                                             <button className='viewArrow'><FontAwesomeIcon icon={faArrowRight} /></button>
