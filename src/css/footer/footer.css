@@ -1,0 +1,114 @@
+footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+  color: #222;
+  position: relative;
+  overflow: hidden;
+  padding-top: 13rem;
+}
+footer .contactAndNavWrap {
+  width: 100%;
+  height: 100%;
+  padding-inline: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+footer .contactAndNavWrap > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .contactAndNavWrap > div h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer .contactAndNavWrap .contact {
+  grid-column: 2/span 3;
+}
+footer .contactAndNavWrap .contact .bar {
+  display: block;
+  width: 100%;
+  border-top: 1px dashed #222;
+}
+footer .contactAndNavWrap .contact > a {
+  margin-top: 1rem;
+  font-size: 1.8vw;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer .contactAndNavWrap .contact > a:hover {
+  color: #00800A;
+}
+footer .contactAndNavWrap .rightWrap {
+  grid-column: 9/span 3;
+  display: flex;
+  gap: 4rem;
+}
+footer .contactAndNavWrap .rightWrap .footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .contactAndNavWrap .rightWrap .footerNav .bar {
+  display: block;
+  width: 100%;
+  border-top: 1px dashed #222;
+}
+footer .contactAndNavWrap .rightWrap .footerNav > div {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+footer .contactAndNavWrap .rightWrap .footerNav > div > p {
+  width: fit-content;
+  font-size: 1.5vw;
+  font-weight: 400;
+  transition: 0.1s;
+}
+footer .contactAndNavWrap .rightWrap .footerNav > div > p:hover {
+  color: #00800A;
+}
+footer .contactAndNavWrap .rightWrap .footerToolWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .contactAndNavWrap .rightWrap .footerToolWrap .bar {
+  display: block;
+  width: 100%;
+  border-top: 1px dashed #222;
+}
+footer .contactAndNavWrap .rightWrap .footerToolWrap p {
+  color: #222;
+}
+footer .contactAndNavWrap .rightWrap .footerToolWrap ul {
+  width: 100%;
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+footer .contactAndNavWrap .rightWrap .footerToolWrap ul li {
+  width: 32px;
+  height: 32px;
+}
+footer .footerText {
+  width: 100%;
+  height: fit-content;
+  align-self: flex-end;
+  margin: auto;
+  font-size: 11.9vw;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .footerText p {
+  font-weight: 600;
+  line-height: 0.7;
+}
+
+/*# sourceMappingURL=footer.css.map */

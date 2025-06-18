@@ -1,0 +1,81 @@
+.worksWrap {
+  width: 100%;
+  background-color: #111;
+  color: #ddd;
+}
+.worksWrap main {
+  width: 100%;
+  padding-inline: 40px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.worksWrap main .mainText {
+  font-size: 5vw;
+  position: absolute;
+  top: 15%;
+  left: 40px;
+  color: #ddd;
+  font-family: "Jura", sans-serif;
+  font-weight: 500;
+}
+.worksWrap main .worksContainer {
+  width: 70vw;
+  max-width: 1000px;
+  margin: 25vw auto;
+  margin-right: 0;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+.worksWrap main .worksContainer:nth-child(2n+1) {
+  margin-left: 0;
+  text-align: right;
+}
+.worksWrap main .worksContainer:nth-child(2n+1) .worksNumber {
+  right: -15vw;
+}
+.worksWrap main .worksContainer:nth-child(2n+1) .description {
+  margin-right: -4vw;
+}
+.worksWrap main .worksContainer .worksNumber {
+  position: absolute;
+  top: -20vw;
+  left: -10vw;
+  font-size: 35vw;
+  color: #333;
+  opacity: 0.7;
+  font-weight: 100;
+  z-index: -1;
+}
+.worksWrap main .worksContainer .worksTitle {
+  color: #ddd;
+  z-index: 2;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+}
+.worksWrap main .worksContainer figure {
+  z-index: 2;
+  overflow: hidden;
+}
+.worksWrap main .worksContainer figure img {
+  filter: blur(5px);
+  transition: 1s;
+}
+.worksWrap main .worksContainer figure img:hover {
+  filter: blur(0);
+  scale: 1.02;
+}
+.worksWrap main .worksContainer .description {
+  font-size: 2.4vw;
+  margin-top: 1vw;
+  font-weight: 300;
+  padding: 0.5rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 3;
+}
+
+/*# sourceMappingURL=works.css.map */

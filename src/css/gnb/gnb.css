@@ -1,0 +1,44 @@
+.gnbWrap {
+  width: 100%;
+  max-width: 1920px;
+  height: 60px;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 999;
+  font-family: "Jura", sans-serif;
+}
+.gnbWrap ul {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2rem;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.gnbWrap ul .logoGnb {
+  grid-column: 2/span 1;
+}
+.gnbWrap ul .mainGnb {
+  grid-column: 9;
+  text-align: right;
+}
+.gnbWrap ul .aboutGnb {
+  grid-column: 10;
+  text-align: right;
+}
+.gnbWrap ul .worksGnb {
+  grid-column: 11;
+  text-align: right;
+}
+.gnbWrap .change {
+  color: #222;
+}
+
+.change ul {
+  color: #fff;
+}
+
+/*# sourceMappingURL=gnb.css.map */

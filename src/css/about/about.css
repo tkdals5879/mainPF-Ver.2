@@ -1,0 +1,88 @@
+.aboutWrap {
+  width: 100%;
+  background-color: #ddd;
+  position: relative;
+  overflow: hidden;
+}
+.aboutWrap main #section01 {
+  height: 100vh;
+  overflow: hidden;
+}
+.aboutWrap main #section01 .text {
+  position: fixed;
+  top: 15%;
+  left: 40px;
+}
+.aboutWrap main #section01 .text .title {
+  font-size: 5vw;
+  font-weight: 900;
+  color: #222;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+.aboutWrap main #section01 .text p {
+  font-size: 0.8rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 900;
+}
+.aboutWrap main #section01 .aboutBg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/public/aboutBg.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.aboutWrap main #section01 .cloud {
+  position: fixed;
+  top: 70px;
+  right: 40px;
+  width: 40vw;
+  height: 25vw;
+  background-image: url(/public/cloud.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutWrap main #section01 .horizontalMoveText {
+  color: #222;
+  line-height: 1.5;
+  font-size: 1.5vw;
+  position: fixed;
+  top: 160px;
+  left: 40px;
+  z-index: 1;
+  font-family: "NanumSquare";
+}
+.aboutWrap main #section02 {
+  background-color: #ddd;
+  padding-top: 8rem;
+}
+.aboutWrap main #section02 .introduceWrap {
+  width: 100%;
+  padding-inline: 40px;
+}
+.aboutWrap main #section02 .introduceWrap .questionWrap {
+  width: 100%;
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  border-radius: 20px;
+}
+.aboutWrap main #section02 .introduceWrap .questionWrap > div h2 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dotted #222;
+  margin-bottom: 2rem;
+  font-family: "NanumSquare";
+  font-weight: 700;
+}
+.aboutWrap main #section02 .introduceWrap .questionWrap > div p {
+  line-height: 1.5;
+  font-size: 1.3rem;
+  color: #555;
+  font-family: "NanumSquare";
+}
+
+/*# sourceMappingURL=about.css.map */
