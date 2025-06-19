@@ -6,7 +6,7 @@ import Main from './pages/Main';
 import About from './pages/About';
 import Works from './pages/Works';
 
-function AnimatedRoutes() {
+function AnimatedRoutes({showIntro}) {
 
     const { pathname } = useLocation();
     const containerRef = useRef(null);
@@ -14,7 +14,7 @@ function AnimatedRoutes() {
 
     const getPageComponent = (pageName) => {
         switch (pageName) {
-            case '/': return <Main />
+            case '/': return <Main showIntro={showIntro} />
             case '/about': return <About />
             case '/works': return <Works />
             default: return <Main />

@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
 
         <Gnb />
-        <AnimatedRoutes />
+        <AnimatedRoutes showIntro={showIntro} />
 
       </BrowserRouter >
       {showIntro && <Intro onCompleted={() => setShowIntro(false)}/> }

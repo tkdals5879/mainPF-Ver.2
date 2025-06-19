@@ -10,7 +10,7 @@ import { ScrollTrigger } from 'gsap/all'
 
 import '../css/main/main.css'
 
-function Main() {
+function Main({ showIntro }) {
 
     const [show, setShow] = useState(false);
 
@@ -46,16 +46,20 @@ function Main() {
     gsap.registerPlugin(ScrollTrigger);
 
     // section01 mainText gsap ▼
-    gsap.set(".reveal", { autoAlpha: 0, y: -20 })
-    const textAni = gsap.timeline();
-    textAni.to(".reveal", {
-        autoAlpha: 1,
-        y: 0,
-        stagger: {
-            amount: 1.2,
-            from: "random"
-        },
-    });
+    useEffect(() => {
+        gsap.set(".reveal", { opacity: 0, y: -30 })
+        const textAni = gsap.timeline();
+        textAni.to(".reveal", {
+            opacity: 1,
+            y: 0,
+            delay: showIntro ? 4.2 : 0,
+            ease:"sine.out",
+            stagger: {
+                amount: 0.8,
+                from: "random"
+            },
+        });
+    }, [showIntro])
 
 
     // section03 box timeline gsap ▼
@@ -152,7 +156,7 @@ function Main() {
     }, [])
 
     ////////////////////////////////////// gsap
-    
+
 
 
 

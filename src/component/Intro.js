@@ -37,7 +37,7 @@ function Intro({ onCompleted }) {
             },"<")
 
             .to(introRef.current, {
-                yPercent: -120,
+                yPercent: -100,
                 duration: 1,
                 ease: "back.in"
             })
