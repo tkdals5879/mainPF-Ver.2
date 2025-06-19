@@ -1,13 +1,14 @@
 .introWrap {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: #000;
     position: fixed;
-    top: 0;
+    top: -20vh;
     left: 0;
     display: flex;
     flex-direction: column;
     z-index: 999;
+    padding-top: 20vh;
 
     .marqueeText {
         width: 100%;

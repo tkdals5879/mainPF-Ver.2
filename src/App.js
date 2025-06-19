@@ -10,18 +10,13 @@ function App() {
 
   return (
     <>
-      {showIntro ? (
-        <Intro onCompleted={() => setShowIntro(false)}/>
-      ) :
-        (
-          <BrowserRouter>
+      <BrowserRouter>
 
-            <Gnb />
-            <AnimatedRoutes />
+        <Gnb />
+        <AnimatedRoutes />
 
-          </BrowserRouter >
-        )
-      }
+      </BrowserRouter >
+      {showIntro && <Intro onCompleted={() => setShowIntro(false)}/> }
     </>
   );
 }
