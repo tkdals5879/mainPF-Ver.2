@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Footer from '../component/Footer'
-import Intro from '../component/Intro'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
