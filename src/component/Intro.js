@@ -5,7 +5,6 @@ import '../css/intro/intro.css'
 
 function Intro({ onCompleted }) {
 
-    const introRef = useRef(null);
     const textRefs = useRef([]);
     const mainTitle = "Hello".split("")
 
