@@ -30,30 +30,30 @@ function Intro({ onCompleted }) {
                 y: 0,
                 duration: 2,
                 ease: "power4.out"
-            },0.5)
+            },1)
             .to(oddText,
                 {
                     autoAlpha: 1,
                     y: 0,
                     duration: 2,
                     ease: "power4.out"
-                },0.5)
+                },1)
 
             .to(evenText,
                 {
                     y: 50,
                     duration: 0.5,
                     ease: "back.in"
-                }, 3)
+                }, 3.5)
             .to(oddText,
                 {
                     y: -50,
                     duration: 0.5,
                     ease: "back.in"
-                }, 3)
+                }, 3.5)
 
-            .to(".topWrap >div", { y: -2 }, 3.2)
-            .to(".bottomWrap >div", { y: 2 }, 3.2)
+            .to(".topWrap >div", { y: -2 }, 3.7)
+            .to(".bottomWrap >div", { y: 2 }, 3.7)
 
             .to(".topWrap .odd", {
                 yPercent: -100,
@@ -62,7 +62,7 @@ function Intro({ onCompleted }) {
                     each: 0.02,
                     from: "center"
                 }
-            }, 3.7)
+            }, 4.2)
             .to(".topWrap .even", {
                 yPercent: -100,
                 ease: "sine.inOut",
@@ -70,7 +70,7 @@ function Intro({ onCompleted }) {
                     each: 0.02,
                     from: "center"
                 }
-            }, 3.75)
+            }, 4.25)
 
 
             .to(".bottomWrap .odd", {
@@ -80,7 +80,7 @@ function Intro({ onCompleted }) {
                     each: 0.02,
                     from: "center"
                 }
-            }, 3.7)
+            }, 4.2)
             .to(".bottomWrap .even", {
                 yPercent: 100,
                 ease: "sine.inOut",
@@ -88,7 +88,7 @@ function Intro({ onCompleted }) {
                     each: 0.02,
                     from: "center"
                 }
-            }, 3.75)
+            }, 4.25)
 
         return () => {
             tl.kill();
