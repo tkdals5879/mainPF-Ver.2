@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter } from 'react-router-dom'
 import Gnb from "./Gnb";
 import AnimatedRoutes from "./AnimatedRoutes";
@@ -7,6 +7,18 @@ import Intro from "./component/Intro";
 function App() {
 
   const [showIntro, setShowIntro] = useState(true)
+
+  useEffect(() => {
+    if(showIntro){
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    }
+  },[showIntro])
 
   return (
     <>
