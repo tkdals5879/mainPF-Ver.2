@@ -46,7 +46,8 @@
 .introWrap .text > p {
   display: inline-block;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
+  padding-inline: 2px;
 }
 
 /*# sourceMappingURL=intro.css.map */
