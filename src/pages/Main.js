@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Footer from '../component/Footer'
+import Intro from '../component/Intro'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
@@ -61,9 +62,9 @@ function Main() {
     // section03 box timeline gsap ▼
     useEffect(() => {
         const ani1 = gsap.timeline();
-        ani1.from('#section03 .HorizontalScrollBoxes .boxA', { y: -100, autoAlpha: 0 })
-            .from('#section03 .HorizontalScrollBoxes .boxB', { y: -100, autoAlpha: 0 })
-            .from('#section03 .HorizontalScrollBoxes .boxC', { y: -100, autoAlpha: 0 })
+        ani1.from('#section03 .gsapBoxWrap .boxA', { y: -100, autoAlpha: 0 })
+            .from('#section03 .gsapBoxWrap .boxB', { y: -100, autoAlpha: 0 })
+            .from('#section03 .gsapBoxWrap .boxC', { y: -100, autoAlpha: 0 })
 
         const trigger = ScrollTrigger.create({
             trigger: '#section03',
@@ -411,7 +412,7 @@ function Main() {
                             매일 한 걸음씩, 더 나은 코드를 향해 <br />
                             꾸준히 나아갑니다.</p>
                     </div>
-                    <div className='HorizontalScrollBoxes'>
+                    <div className='gsapBoxWrap'>
                         <div className='about_innerBox boxA'>
                             <p className='couterNum'>01</p>
                             <div className='object' ref={objectRef01}>

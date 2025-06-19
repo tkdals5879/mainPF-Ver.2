@@ -94,15 +94,6 @@ function Works() {
 
     }, [imagesLoaded]);
 
-    // 로딩 중 화면 (필요시 커스텀 가능)
-    if (!imagesLoaded) {
-        return (
-            <div className="loading-screen">
-                <h2>이미지 로딩 중...</h2>
-            </div>
-        );
-    }
-
     return (
         <div className="worksWrap">
             <main>
@@ -110,9 +101,11 @@ function Works() {
                 <section id="section01" className="worksContainer">
                     <span className="worksNumber">01</span>
                     <h2 className="worksTitle">Portfolio Ver.2</h2>
-                    <figure>
-                        <img src="portfolioVer_2.webp" alt="portfolioVer_2" />
-                    </figure>
+                    <a href="https://ver2-portfolio.netlify.app/" target="_blank" rel="noreferrer">
+                        <figure>
+                            <img src="portfolioVer_2.webp" alt="portfolioVer_2" />
+                        </figure>
+                    </a>
                     <p className="description">디자인을 디벨롭한 두번째 포트폴리오 사이트</p>
                 </section>
 

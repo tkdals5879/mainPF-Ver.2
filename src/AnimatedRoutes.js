@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import Main from './pages/Main';
 import About from './pages/About';
 import Works from './pages/Works';
+import Intro from './component/Intro';
 
 function AnimatedRoutes() {
 

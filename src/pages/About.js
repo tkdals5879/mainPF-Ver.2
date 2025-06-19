@@ -41,7 +41,7 @@ function About() {
         const trigger = ScrollTrigger.create({
             trigger: "#section01",
             start: "top top",
-            end: "+=7000",
+            end: "+=6000",
             scrub: 1,
             pin: true,
             markers: false,

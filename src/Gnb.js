@@ -1,43 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom';
 import './css/gnb/gnb.css'
 
-
 function Gnb() {
-
-    const { pathname } = useLocation();
-
-    const [colorChange, setColorChange] = useState(false);
-    useEffect(() => {
-        if (pathname === '/works') return;
-
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY
-            const viewportHeight = window.innerHeight;
-
-            if (currentScrollY >= viewportHeight) {
-                setColorChange(true)
-            } else {
-                setColorChange(false)
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll)
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-
-    }, [pathname])
-
-
-
-
-
-
     
     return (
-        <div className={`gnbWrap ${colorChange ? 'change' : ''}`}>
+        <div className="gnbWrap">
             <ul>
                 <li className='logoGnb'><Link to="/">Logo</Link></li>
                 <li className='mainGnb'><Link to="/">Main</Link></li>

@@ -206,7 +206,7 @@
   line-height: 1.5;
   font-family: "NanumSquare";
 }
-.mainWrap #section03 .HorizontalScrollBoxes {
+.mainWrap #section03 .gsapBoxWrap {
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -214,7 +214,7 @@
   padding: 3rem 0;
   overflow: hidden;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .about_innerBox {
+.mainWrap #section03 .gsapBoxWrap .about_innerBox {
   width: calc(33.3333333333vw - 120px);
   height: 45vh;
   margin-bottom: 2rem;
@@ -224,18 +224,18 @@
   border-radius: 10px;
   box-shadow: 3px 3px 5px #555;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .about_innerBox .couterNum {
+.mainWrap #section03 .gsapBoxWrap .about_innerBox .couterNum {
   font-size: 2rem;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .about_innerBox .object {
+.mainWrap #section03 .gsapBoxWrap .about_innerBox .object {
   width: 100%;
   height: 70%;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .object {
+.mainWrap #section03 .gsapBoxWrap .boxA .object {
   position: relative;
   margin-bottom: 2rem;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .object > div {
+.mainWrap #section03 .gsapBoxWrap .boxA .object > div {
   width: 60%;
   height: 20px;
   position: absolute;
@@ -244,7 +244,7 @@
   transform: translate(-50%, -50%);
   border-radius: 5px;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .object > div span {
+.mainWrap #section03 .gsapBoxWrap .boxA .object > div span {
   width: 8px;
   height: 8px;
   display: block;
@@ -255,41 +255,41 @@
   background-color: #fff;
   border-radius: 100%;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .object > div:nth-child(1) {
+.mainWrap #section03 .gsapBoxWrap .boxA .object > div:nth-child(1) {
   background-color: #222;
   z-index: 6;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .object > div:nth-child(2) {
+.mainWrap #section03 .gsapBoxWrap .boxA .object > div:nth-child(2) {
   background-color: #333;
   z-index: 5;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .object > div:nth-child(3) {
+.mainWrap #section03 .gsapBoxWrap .boxA .object > div:nth-child(3) {
   background-color: #444;
   z-index: 4;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .object > div:nth-child(4) {
+.mainWrap #section03 .gsapBoxWrap .boxA .object > div:nth-child(4) {
   background-color: #555;
   z-index: 3;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .object > div:nth-child(5) {
+.mainWrap #section03 .gsapBoxWrap .boxA .object > div:nth-child(5) {
   background-color: #666;
   z-index: 2;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .object > div:nth-child(6) {
+.mainWrap #section03 .gsapBoxWrap .boxA .object > div:nth-child(6) {
   background-color: #777;
   z-index: 1;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxA .explanation {
+.mainWrap #section03 .gsapBoxWrap .boxA .explanation {
   text-align: center;
   font-size: 1.2rem;
   font-family: "Jura", sans-serif;
   font-weight: 900;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxB .object {
+.mainWrap #section03 .gsapBoxWrap .boxB .object {
   position: relative;
   margin-bottom: 2rem;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxB .object > div {
+.mainWrap #section03 .gsapBoxWrap .boxB .object > div {
   width: 0px;
   height: 0px;
   position: absolute;
@@ -297,39 +297,39 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxB .object > div:nth-child(1) {
+.mainWrap #section03 .gsapBoxWrap .boxB .object > div:nth-child(1) {
   background-color: #555;
   z-index: 1;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxB .object > div:nth-child(2) {
+.mainWrap #section03 .gsapBoxWrap .boxB .object > div:nth-child(2) {
   background-color: #444;
   z-index: 2;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxB .object > div:nth-child(3) {
+.mainWrap #section03 .gsapBoxWrap .boxB .object > div:nth-child(3) {
   background-color: #333;
   z-index: 3;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxB .object > div:nth-child(4) {
+.mainWrap #section03 .gsapBoxWrap .boxB .object > div:nth-child(4) {
   background-color: #222;
   z-index: 4;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxB .object > div:nth-child(5) {
+.mainWrap #section03 .gsapBoxWrap .boxB .object > div:nth-child(5) {
   width: 60%;
   height: 60%;
   z-index: 0;
   background-color: #222;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxB .explanation {
+.mainWrap #section03 .gsapBoxWrap .boxB .explanation {
   text-align: center;
   font-size: 1.2rem;
   font-family: "Jura", sans-serif;
   font-weight: 900;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxC .object {
+.mainWrap #section03 .gsapBoxWrap .boxC .object {
   position: relative;
   margin-bottom: 2rem;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxC .object > div {
+.mainWrap #section03 .gsapBoxWrap .boxC .object > div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -338,7 +338,7 @@
   height: 60%;
   background-color: #222;
 }
-.mainWrap #section03 .HorizontalScrollBoxes .boxC .explanation {
+.mainWrap #section03 .gsapBoxWrap .boxC .explanation {
   text-align: center;
   font-size: 1.2rem;
   font-family: "Jura", sans-serif;

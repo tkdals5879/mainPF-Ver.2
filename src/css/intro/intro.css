@@ -1,0 +1,71 @@
+.introWrap {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+.introWrap .marqueeText {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+.introWrap .marqueeText p {
+  opacity: 0.2;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  color: #646464;
+  font-size: 150px;
+  white-space: nowrap;
+  align-items: center;
+}
+.introWrap .num1 {
+  animation: RTL 7s infinite linear;
+  margin-left: -24rem;
+}
+.introWrap .num3 {
+  animation: RTL 12s linear;
+}
+@keyframes RTL {
+  0% {
+    transform: translateX(60%);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
+}
+.introWrap .num2 {
+  animation: LTR 9s linear;
+}
+.introWrap .num4 {
+  animation: LTR 15s linear;
+  margin-left: 23rem;
+}
+@keyframes LTR {
+  0% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(60%);
+  }
+}
+.introWrap .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  display: flex;
+}
+.introWrap .text > p {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+/*# sourceMappingURL=intro.css.map */
