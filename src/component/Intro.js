@@ -15,6 +15,8 @@ function Intro({ onCompleted }) {
         const evenText = textRefs.current.filter((_, i) => i % 2 === 0);
         //  evenText >> h , l , o
 
+
+        //////////////////////////////// gsap ▼
         gsap.set(evenText, { autoAlpha: 0, y: 50 })
         gsap.set(oddText, { autoAlpha: 0, y: -50 })
 
