@@ -3,7 +3,7 @@ import gsap from 'gsap'
 
 import '../css/intro/intro.css'
 
-function Intro({onCompleted}) {
+function Intro({ onCompleted }) {
 
     const introRef = useRef(null);
     const textRefs = useRef([]);
@@ -15,6 +15,7 @@ function Intro({onCompleted}) {
                 onCompleted();
             }
         });
+
         tl.fromTo(textRefs.current,
             {
                 autoAlpha: 0,
@@ -25,12 +26,19 @@ function Intro({onCompleted}) {
                 y: 0,
                 duration: 2,
                 ease: "expo",
-                stagger: 0.4
+                stagger: 0.2
             },
         )
+            .to(textRefs.current, {
+                autoAlpha:0,
+            })
+            .to(textRefs.current, {
+                x:-100
+            },"<")
+
             .to(introRef.current, {
                 yPercent: -120,
-                duration: 1.5,
+                duration: 1,
                 ease: "back.in"
             })
 
