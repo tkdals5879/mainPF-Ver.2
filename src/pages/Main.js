@@ -172,7 +172,7 @@ function Main({ showIntro }) {
                 <section id='section01'>
 
                     <div className='bgVideo'>
-                        <video src="/mainBg.mp4" autoPlay loop muted></video>
+                        <video src="/mainBg.mp4" autoPlay loop></video>
                     </div>
                     <div className='section01Size'>
                         <h1>
