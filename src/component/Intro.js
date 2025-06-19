@@ -10,37 +10,86 @@ function Intro({ onCompleted }) {
     const mainTitle = "Hello".split("")
 
     useEffect(() => {
+
+        const oddText = textRefs.current.filter((_, i) => i % 2 === 1);
+        // oddText >> e , l
+        const evenText = textRefs.current.filter((_, i) => i % 2 === 0);
+        //  evenText >> h , l , o
+
+        gsap.set(evenText, { autoAlpha: 0, y: 50 })
+        gsap.set(oddText, { autoAlpha: 0, y: -50 })
+
         const tl = gsap.timeline({
             onComplete: () => {
                 onCompleted();
             }
         });
 
-        tl.fromTo(textRefs.current,
-            {
-                autoAlpha: 0,
-                y: -50
-            },
+        tl.to(evenText,
             {
                 autoAlpha: 1,
                 y: 0,
                 duration: 2,
-                ease: "expo",
-                stagger: 0.2
-            },
-        )
-            .to(textRefs.current, {
-                autoAlpha:0,
-            })
-            .to(textRefs.current, {
-                x:-100
-            },"<")
+                ease: "power4.out"
+            },0.5)
+            .to(oddText,
+                {
+                    autoAlpha: 1,
+                    y: 0,
+                    duration: 2,
+                    ease: "power4.out"
+                },0.5)
 
-            .to(introRef.current, {
+            .to(evenText,
+                {
+                    y: 50,
+                    duration: 0.5,
+                    ease: "back.in"
+                }, 3)
+            .to(oddText,
+                {
+                    y: -50,
+                    duration: 0.5,
+                    ease: "back.in"
+                }, 3)
+
+            .to(".topWrap >div", { y: -2 }, 3.2)
+            .to(".bottomWrap >div", { y: 2 }, 3.2)
+
+            .to(".topWrap .odd", {
                 yPercent: -100,
-                duration: 1,
-                ease: "back.in"
-            })
+                ease: "sine.inOut",
+                stagger: {
+                    each: 0.02,
+                    from: "center"
+                }
+            }, 3.7)
+            .to(".topWrap .even", {
+                yPercent: -100,
+                ease: "sine.inOut",
+                stagger: {
+                    each: 0.02,
+                    from: "center"
+                }
+            }, 3.75)
+
+
+            .to(".bottomWrap .odd", {
+                yPercent: 100,
+                ease: "sine.inOut",
+                stagger: {
+                    each: 0.02,
+                    from: "center"
+                }
+            }, 3.7)
+            .to(".bottomWrap .even", {
+                yPercent: 100,
+                ease: "sine.inOut",
+                stagger: {
+                    each: 0.02,
+                    from: "center"
+                }
+            }, 3.75)
 
         return () => {
             tl.kill();
@@ -49,11 +98,51 @@ function Intro({ onCompleted }) {
     }, [onCompleted]);
 
     return (
-        <div className='introWrap' ref={introRef}>
-            <div className='marqueeText num1'><p>Front-end Developer</p></div>
-            <div className='marqueeText num2'><p>communicatio, passion</p></div>
-            <div className='marqueeText num3'><p>thank you for visiting my site</p></div>
-            <div className='marqueeText num4'><p>stagnation is regression</p></div>
+        <div className='introWrap'>
+            <div className='topWrap'>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+            </div>
+            <div className='bottomWrap'>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+                <div className='odd'></div>
+                <div className='even'></div>
+            </div>
             <div className='text'>
                 {
                     mainTitle.map((char, idx) => (
