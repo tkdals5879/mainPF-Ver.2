@@ -38,7 +38,7 @@ function Intro({onCompleted}) {
             tl.kill();
         }
 
-    }, []);
+    }, [onCompleted]);
 
     return (
         <div className='introWrap' ref={introRef}>
