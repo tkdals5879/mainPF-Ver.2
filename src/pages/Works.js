@@ -90,6 +90,24 @@ function Works() {
             });
         });
 
+        gsap.utils.toArray(".notice").forEach(char => {
+            const isLTR = char.classList.contains("LTR");
+            gsap.set(char, { autoAlpha: 0, x: isLTR ? -50 : 50 })
+            gsap.to(char, {
+                autoAlpha: 1,
+                x: 0,
+                duration: 2,
+                ease: "expo",
+                scrollTrigger: {
+                    trigger: char,
+                    start: "top 85%",
+                    end: "bottom top"
+                }
+            });
+        })
+
+
+
         ScrollTrigger.refresh();
 
     }, [imagesLoaded]);
@@ -107,6 +125,7 @@ function Works() {
                         </figure>
                     </a>
                     <p className="description">디자인을 디벨롭한 두번째 포트폴리오 사이트</p>
+                    <span className="notice">미완성 : 반응형제작중</span>
                 </section>
 
                 <section id="section02" className="worksContainer">
@@ -118,6 +137,7 @@ function Works() {
                         </figure>
                     </a>
                     <p className="description LTR">국내 프로야구 리그 (KBO)에 관련된 정보를 제공하는 사이트</p>
+                    <span className="notice LTR">미완성 : 백엔드 문제 수정중</span>
                 </section>
 
                 <section id="section03" className="worksContainer">

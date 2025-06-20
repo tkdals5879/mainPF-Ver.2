@@ -77,5 +77,10 @@
   position: relative;
   z-index: 3;
 }
+.worksWrap main .worksContainer .notice {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.2vw;
+}
 
 /*# sourceMappingURL=works.css.map */

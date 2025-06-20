@@ -1,4 +1,3 @@
-import React from 'react'
 import '../css/footer/footer.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -17,7 +16,6 @@ function Footer() {
                     <h2>Contact</h2>
                     <span className='bar'></span>
                     <a href="mailto:tkdals58799@gmail.com">tkdals58799@gmail.com</a>
-                    {/* <p>tkdals58799@gmail.com</p> */}
                 </div>
                 <div className='rightWrap'>
 

@@ -13,13 +13,17 @@
 .gnbWrap ul {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding-inline: 40px;
   column-gap: 2rem;
   font-size: 20px;
   font-weight: 500;
   transition: 0.3s;
 }
+.gnbWrap ul > li {
+  align-self: center;
+}
 .gnbWrap ul .logoGnb {
-  grid-column: 2/span 1;
+  grid-column: 1;
 }
 .gnbWrap ul .mainGnb {
   grid-column: 9;
@@ -32,6 +36,11 @@
 .gnbWrap ul .worksGnb {
   grid-column: 11;
   text-align: right;
+}
+.gnbWrap ul .contactGnb {
+  grid-column: 12;
+  text-align: right;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=gnb.css.map */

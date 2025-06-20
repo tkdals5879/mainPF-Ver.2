@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
 import Footer from '../component/Footer';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all'
@@ -36,7 +36,7 @@ function About() {
             .to(".aboutBg", { y: 200 })
             .from(".horizontalMoveText", { autoAlpha: 0 }, "<")
             .from(".cloud", { autoAlpha: 0, x: 100 }, "<")
-            .to({}, { duration: 0.6 })
+            .to({}, { duration: 0.3 })
 
         const trigger = ScrollTrigger.create({
             trigger: "#section01",

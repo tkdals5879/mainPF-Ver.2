@@ -13,13 +13,18 @@
     ul {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        padding-inline: 40px;
         column-gap: 2rem;
         font-size: 20px;
         font-weight: 500;
         transition: .3s;
 
+        >li{
+            align-self: center;
+        }
+
         .logoGnb {
-            grid-column: 2 / span 1;
+            grid-column: 1;
         }
 
         .mainGnb {
@@ -35,6 +40,11 @@
         .worksGnb {
             grid-column: 11;
             text-align: right;
+        }
+        .contactGnb{
+            grid-column: 12;
+            text-align: right;
+            cursor: pointer;
         }
     }
 }

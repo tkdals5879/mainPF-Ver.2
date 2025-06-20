@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Footer from '../component/Footer'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
