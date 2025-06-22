@@ -47,13 +47,16 @@ function Main({ showIntro }) {
 
     // section01 mainText gsap ▼
     useEffect(() => {
+        const video = document.querySelector("video");
+        video?.play();
+        
         gsap.set(".reveal", { opacity: 0, y: -30 })
         const textAni = gsap.timeline();
         textAni.to(".reveal", {
             opacity: 1,
             y: 0,
             delay: showIntro ? 4.2 : 0,
-            ease:"sine.out",
+            ease: "sine.out",
             stagger: {
                 amount: 0.8,
                 from: "random"
@@ -172,7 +175,7 @@ function Main({ showIntro }) {
                 <section id='section01'>
 
                     <div className='bgVideo'>
-                        <video src="/mainBg.mp4" autoPlay loop muted></video>
+                        <video src="/mainBg.mp4" autoPlay loop muted preload="auto"></video>
                     </div>
                     <div className='section01Size'>
                         <h1>
