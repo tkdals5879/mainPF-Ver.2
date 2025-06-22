@@ -12,7 +12,6 @@
   position: fixed;
   top: 15%;
   left: 40px;
-  z-index: 2;
 }
 .aboutWrap main #section01 .text .title {
   font-size: 5vw;
@@ -33,7 +32,6 @@
   background-image: url(/public/aboutBg.webp);
   background-position: center;
   background-size: cover;
-  z-index: 2;
 }
 .aboutWrap main #section01 .cloud {
   position: fixed;
