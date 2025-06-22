@@ -76,7 +76,7 @@ function Main({ showIntro }) {
             trigger: '#section03',
             start: "top top",
             end: "+=3000",
-            scrub: true,
+            scrub: 1,
             pin: true,
             animation: ani1
         })
