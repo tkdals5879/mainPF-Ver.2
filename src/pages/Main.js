@@ -420,7 +420,7 @@ function Main({ showIntro }) {
                     </div>
                     <div className='gsapBoxWrap'>
                         <div className='about_innerBox boxA'>
-                            <p className='couterNum'>01</p>
+                            <p className='counterNum'>01</p>
                             <div className='object' ref={objectRef01}>
                                 <div><span></span></div>
                                 <div><span></span></div>
@@ -432,7 +432,7 @@ function Main({ showIntro }) {
                             <p className='explanation'>Motion Develop</p>
                         </div>
                         <div className='about_innerBox boxB'>
-                            <p className='couterNum'>02</p>
+                            <p className='counterNum'>02</p>
                             <div className='object' ref={objectRef02}>
                                 <div></div>
                                 <div></div>
@@ -443,7 +443,7 @@ function Main({ showIntro }) {
                             <p className='explanation'>Motion Develop</p>
                         </div>
                         <div className='about_innerBox boxC'>
-                            <p className='couterNum'>03</p>
+                            <p className='counterNum'>03</p>
                             <div className='object' ref={objectRef03}>
                                 <div></div>
                             </div>

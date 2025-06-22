@@ -43,4 +43,28 @@
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .gnbWrap ul {
+    grid-template-columns: repeat(8, 1fr);
+    padding-inline: 20px;
+    column-gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .gnbWrap .mainGnb {
+    grid-column: 4;
+    text-align: right;
+  }
+  .gnbWrap .mainGnb .aboutGnb {
+    grid-column: 5;
+    text-align: right;
+  }
+  .gnbWrap .mainGnb .worksGnb {
+    grid-column: 6;
+    text-align: right;
+  }
+  .gnbWrap .mainGnb .contactGnb {
+    grid-column: 7;
+  }
+}
+
 /*# sourceMappingURL=gnb.css.map */

@@ -19,7 +19,7 @@
         font-weight: 500;
         transition: .3s;
 
-        >li{
+        >li {
             align-self: center;
         }
 
@@ -41,10 +41,41 @@
             grid-column: 11;
             text-align: right;
         }
-        .contactGnb{
+
+        .contactGnb {
             grid-column: 12;
             text-align: right;
             cursor: pointer;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .gnbWrap {
+        ul {
+            grid-template-columns: repeat(8, 1fr);
+            padding-inline: 20px;
+            column-gap: .5rem;
+            font-size: .8rem
+        }
+
+        .mainGnb {
+            grid-column: 4;
+            text-align: right;
+
+            .aboutGnb {
+                grid-column: 5;
+                text-align: right;
+            }
+
+            .worksGnb {
+                grid-column: 6;
+                text-align: right;
+            }
+
+            .contactGnb {
+                grid-column: 7;
+            }
         }
     }
 }
