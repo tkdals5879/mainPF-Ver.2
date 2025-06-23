@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import Footer from '../component/Footer';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all'
@@ -6,6 +6,8 @@ import { ScrollTrigger } from 'gsap/all'
 import '../css/about/about.css'
 
 function About() {
+
+    const [stopGsap, setStopGsap] = useState(false)
 
     // 최상단에서의 스크롤막기
     useEffect(() => {
@@ -27,7 +29,20 @@ function About() {
     // ////////////////////////////////////////gsap ▼
     gsap.registerPlugin(ScrollTrigger);
 
+    useEffect(() => {
+        const checkGsap = () => {
+            setStopGsap(window.innerWidth < 1024)
+        }
+
+        checkGsap();
+        window.addEventListener("resize",checkGsap);
+
+        return () => window.removeEventListener("resize",checkGsap)
+        
+    },[])
+
     useLayoutEffect(() => {
+        if (stopGsap) return;
 
         const zoomIn = gsap.timeline();
         zoomIn.to(".aboutBg", { scale: 3, x: -300 })
@@ -56,7 +71,7 @@ function About() {
             trigger.kill();
         }
 
-    }, [])
+    }, [stopGsap])
 
 
 

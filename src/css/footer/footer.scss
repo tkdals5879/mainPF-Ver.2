@@ -40,7 +40,8 @@ footer {
                 font-weight: 500;
                 cursor: pointer;
                 transition: .3s;
-                &:hover{
+
+                &:hover {
                     color: #00800A;
                 }
             }
@@ -74,6 +75,7 @@ footer {
                         font-size: 1.5vw;
                         font-weight: 400;
                         transition: .1s;
+                        cursor: pointer;
 
                         &:hover {
                             color: #00800A;
@@ -99,6 +101,7 @@ footer {
 
                 ul {
                     width: 100%;
+                    margin-top: 1rem;
                     display: flex;
                     gap: .7rem;
                     flex-wrap: wrap;
@@ -129,6 +132,51 @@ footer {
         p {
             font-weight: 600;
             line-height: .7;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    footer {
+        padding-top: 0;
+
+        .contactAndNavWrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            >div {
+                h2 {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .contact {
+                >a {
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+
+            .rightWrap {
+                .footerNav {
+
+                    >div {
+                        >p {
+                            font-size: .9rem;
+                        }
+                    }
+                }
+
+                .footerToolWrap{
+                    ul{
+                        li{
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

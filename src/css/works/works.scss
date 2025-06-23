@@ -95,3 +95,25 @@
         }
     }
 }
+
+@media ( max-width: 1024px ) {
+    .worksWrap{
+        main{
+            .mainText{
+                top: 10rem;
+                font-size: 2rem;
+            }
+            #section01{
+                margin-top: 20rem;
+            }
+            .worksContainer{
+                .description{
+                    transform: translateX(-30px) !important;
+                }
+                .LTR{
+                    transform: translateX(10px) !important;
+                }
+            }
+        }
+    }
+}

@@ -146,7 +146,7 @@ function Main({ showIntro }) {
         const tl = gsap.timeline({ repeat: -1 })
         tl.to(box, { height: "16%" })
             .to(box, { borderRadius: 100 })
-            .to(box, { width: "12%" })
+            .to(box, { width: "14%" })
             .to(box, { height: "60%" })
             .to(box, { borderRadius: 0 })
             .to(box, { rotate: 180 })

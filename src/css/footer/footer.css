@@ -67,6 +67,7 @@ footer .contactAndNavWrap .rightWrap .footerNav > div > p {
   font-size: 1.5vw;
   font-weight: 400;
   transition: 0.1s;
+  cursor: pointer;
 }
 footer .contactAndNavWrap .rightWrap .footerNav > div > p:hover {
   color: #00800A;
@@ -86,6 +87,7 @@ footer .contactAndNavWrap .rightWrap .footerToolWrap p {
 }
 footer .contactAndNavWrap .rightWrap .footerToolWrap ul {
   width: 100%;
+  margin-top: 1rem;
   display: flex;
   gap: 0.7rem;
   flex-wrap: wrap;
@@ -109,6 +111,31 @@ footer .footerText {
 footer .footerText p {
   font-weight: 600;
   line-height: 0.7;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    padding-top: 0;
+  }
+  footer .contactAndNavWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  footer .contactAndNavWrap > div h2 {
+    font-size: 1.3rem;
+  }
+  footer .contactAndNavWrap .contact > a {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  footer .contactAndNavWrap .rightWrap .footerNav > div > p {
+    font-size: 0.9rem;
+  }
+  footer .contactAndNavWrap .rightWrap .footerToolWrap ul li {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

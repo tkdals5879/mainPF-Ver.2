@@ -68,7 +68,7 @@ function Works() {
                 scrollTrigger: {
                     trigger: num,
                     start: "top center",
-                    scrub: 2,
+                    scrub: 1,
                 }
             });
         });
@@ -125,7 +125,6 @@ function Works() {
                         </figure>
                     </a>
                     <p className="description">디자인을 디벨롭한 두번째 포트폴리오 사이트</p>
-                    <span className="notice">미완성 : 반응형제작중</span>
                 </section>
 
                 <section id="section02" className="worksContainer">

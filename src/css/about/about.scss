@@ -72,7 +72,6 @@
 
                 .questionWrap {
                     width: 100%;
-                    padding-inline: 40px;
                     display: flex;
                     flex-direction: column;
                     gap: 10rem;
@@ -96,6 +95,39 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width : 1024px ) {
+    .aboutWrap{
+        main{
+            .pin-spacer{
+                padding: 0 !important;
+                height: 0 !important;
+            }
+            #section01{
+                position: static !important;
+                .text{
+                    position:static;
+                    margin: 10rem 0 0 40px;
+                    .title{
+                        font-size: 2rem;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+                .aboutBg{
+                    display: none;
+                }
+                .cloud{
+                    display: none;
+                }
+            }
+            #section02 {
+                margin-top: 16vh;
             }
         }
     }

@@ -64,7 +64,6 @@
 }
 .aboutWrap main #section02 .introduceWrap .questionWrap {
   width: 100%;
-  padding-inline: 40px;
   display: flex;
   flex-direction: column;
   gap: 10rem;
@@ -82,6 +81,35 @@
   font-size: 1.3rem;
   color: #555;
   font-family: "NanumSquare";
+}
+
+@media (max-width: 1024px) {
+  .aboutWrap main .pin-spacer {
+    padding: 0 !important;
+    height: 0 !important;
+  }
+  .aboutWrap main #section01 {
+    position: static !important;
+  }
+  .aboutWrap main #section01 .text {
+    position: static;
+    margin: 10rem 0 0 40px;
+  }
+  .aboutWrap main #section01 .text .title {
+    font-size: 2rem;
+  }
+  .aboutWrap main #section01 .text p {
+    display: none;
+  }
+  .aboutWrap main #section01 .aboutBg {
+    display: none;
+  }
+  .aboutWrap main #section01 .cloud {
+    display: none;
+  }
+  .aboutWrap main #section02 {
+    margin-top: 16vh;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */
