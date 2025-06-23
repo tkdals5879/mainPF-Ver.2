@@ -96,9 +96,14 @@
   }
   .worksWrap main .worksContainer .description {
     padding-left: 2.5rem;
-  }
-  .worksWrap main .worksContainer .description:nth-child(2n) {
     padding-right: 1rem;
+    font-size: 0.7rem;
+  }
+  .worksWrap main .worksContainer .LTR {
+    padding-left: 0;
+  }
+  .worksWrap main .worksContainer .notice {
+    font-size: 0.6rem;
   }
 }
 

@@ -96,23 +96,31 @@
     }
 }
 
-@media ( max-width: 1024px ) {
-    .worksWrap{
-        main{
+@media (max-width: 1024px) {
+    .worksWrap {
+        main {
             padding-bottom: 10rem;
-            .mainText{
+
+            .mainText {
                 top: 10rem;
                 font-size: 2rem;
             }
-            #section01{
+
+            #section01 {
                 margin-top: 20rem;
             }
-            .worksContainer{
-                .description{
+
+            .worksContainer {
+                .description {
                     padding-left: 2.5rem;
-                    &:nth-child(2n){
-                        padding-right: 1rem;
-                    }
+                    padding-right: 1rem;
+                    font-size: .7rem;
+                }
+                .LTR{
+                    padding-left: 0;
+                }
+                .notice{
+                    font-size: .6rem;
                 }
             }
         }
