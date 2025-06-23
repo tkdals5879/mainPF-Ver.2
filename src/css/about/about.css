@@ -93,7 +93,7 @@
   }
   .aboutWrap main #section01 .text {
     position: static;
-    margin: 10rem 0 0 40px;
+    margin: 5rem 0 0 40px;
   }
   .aboutWrap main #section01 .text .title {
     font-size: 2rem;
@@ -108,7 +108,7 @@
     display: none;
   }
   .aboutWrap main #section02 {
-    margin-top: 16vh;
+    margin-top: 10vh;
   }
 }
 

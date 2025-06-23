@@ -445,6 +445,17 @@
 @media (max-width : 1024px) {
     .mainWrap{
         #section02{
+            .textBox{
+                margin-bottom: .5rem;
+                >div{
+                    flex-direction: column;
+                    gap: 1rem;
+                    align-items: start;
+                    span{
+                        align-self: flex-end;
+                    }
+                }
+            }
             .projectBoxWrap{
                 .projectBox{
                     padding: 1rem;

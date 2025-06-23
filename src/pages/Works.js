@@ -56,9 +56,8 @@ function Works() {
     }, []);
 
     useEffect(() => {
-        if (!imagesLoaded) return; // 이미지가 다 로드되어야 실행
+        if (!imagesLoaded) return;
 
-        // GSAP 애니메이션 셋팅
         gsap.utils.toArray(".worksNumber").forEach(num => {
             const isLTR = num.classList.contains("LTR");
 

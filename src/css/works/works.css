@@ -84,6 +84,9 @@
 }
 
 @media (max-width: 1024px) {
+  .worksWrap main {
+    padding-bottom: 10rem;
+  }
   .worksWrap main .mainText {
     top: 10rem;
     font-size: 2rem;
@@ -92,10 +95,10 @@
     margin-top: 20rem;
   }
   .worksWrap main .worksContainer .description {
-    transform: translateX(-30px) !important;
+    padding-left: 2.5rem;
   }
-  .worksWrap main .worksContainer .LTR {
-    transform: translateX(10px) !important;
+  .worksWrap main .worksContainer .description:nth-child(2n) {
+    padding-right: 1rem;
   }
 }
 
