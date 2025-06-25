@@ -129,7 +129,7 @@ function Works() {
                 <section id="section02" className="worksContainer">
                     <span className="worksNumber LTR">02</span>
                     <h2 className="worksTitle">KBO Project</h2>
-                    <a href="https://kboproject2.netlify.app/" target='_blank' rel="noreferrer">
+                    <a href="https://kboproject.netlify.app/" target='_blank' rel="noreferrer">
                         <figure>
                             <img src="/kboProjectImg.webp" alt="kboProjectImg" />
                         </figure>
