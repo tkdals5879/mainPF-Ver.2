@@ -257,7 +257,7 @@ function Main({ showIntro }) {
                                                 작업기간 : 4~5주</p>
                                         </div>
                                     </div>
-                                    <a href="https://kboproject2.netlify.app/" target='_blank' rel="noreferrer">
+                                    <a href="https://kboproject.netlify.app/" target='_blank' rel="noreferrer">
                                         <div className='viewWrap'>
                                             <button className='view'>View</button>
                                             <button className='viewArrow'><FontAwesomeIcon icon={faArrowRight} /></button>

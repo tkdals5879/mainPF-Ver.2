@@ -135,7 +135,6 @@ function Works() {
                         </figure>
                     </a>
                     <p className="description LTR">국내 프로야구 리그 (KBO)에 관련된 정보를 제공하는 사이트</p>
-                    {/* <span className="notice LTR">미완성 : 백엔드 문제 수정중</span> */}
                 </section>
 
                 <section id="section03" className="worksContainer">
