@@ -15,6 +15,27 @@
   color: #ddd;
   z-index: 999;
 }
+.archiveWrap .archiveDesc {
+  width: 100vw;
+  height: 100vh;
+  background-color: #111;
+  color: #ddd;
+}
+.archiveWrap .archiveDesc p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "NanumSquare";
+  text-align: center;
+  line-height: 1.5;
+}
+.archiveWrap .archiveDesc span {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .archiveWrap .archive {
   width: 100%;
   height: 100vh;
@@ -75,15 +96,15 @@
   gap: 3rem;
 }
 .archiveWrap .archive .wrapper .information .description p {
-  font-size: 1.5rem;
   font-family: "Jura", sans-serif;
+  margin-bottom: 0.5rem;
 }
 .archiveWrap .archive .wrapper .information .description span {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
 }
 .archiveWrap .archive .wrapper .information .addDate p {
-  font-size: 1.5rem;
   font-family: "Jura", sans-serif;
+  margin-bottom: 0.5rem;
 }
 .archiveWrap .archive .wrapper .information .addDate span {
   font-size: 0.9rem;

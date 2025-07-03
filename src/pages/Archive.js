@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 
 import "../css/archive/archive.css"
@@ -54,26 +55,6 @@ function Archive() {
             });
 
             tl.to({},{duration:0.3})
-
-
-
-            // gsap.fromTo(
-            //     wrapper,
-            //     {
-            //         xPercent: 0
-            //     },
-            //     {
-            //         xPercent: -100,
-            //         ease: "none",
-            //         scrollTrigger: {
-            //             trigger: section,
-            //             start: "top+=500 top",
-            //             end:"+=1000",
-            //             pin:true,
-            //             scrub:1,
-            //             markers:true
-            //         }
-            //     });
         });
 
         return () => {
@@ -87,6 +68,11 @@ function Archive() {
     return (
         <div className='archiveWrap'>
             <h1>Archive</h1>
+            <div className='archiveDesc'>
+            <p>특정 기능을 구현하기위한 로직을 실험하는 사이트들 입니다. <br/>
+            이러한 과정을 통해 다양한 효과를 구현하기위해 끊임없이 노력하고있습니다.</p>
+            <span>scroll down <FontAwesomeIcon icon={faCaretDown} /></span>
+            </div>
             {archiveList.map((el, idx) => (
                 <div className={`archive ${el.name}`} key={idx}>
                     <div className='wrapper'>

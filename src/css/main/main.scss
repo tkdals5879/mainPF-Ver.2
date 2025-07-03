@@ -37,6 +37,9 @@
                 font-weight: 900;
                 line-height: 1;
                 color: #ddd;
+                font-family: "Jura", sans-serif;
+                letter-spacing: -5px;
+
 
 
                 .h1TopWrap {
@@ -445,25 +448,29 @@
 
 
 @media (max-width : 1024px) {
-    .mainWrap{
-        #section02{
-            .textBox{
+    .mainWrap {
+        #section02 {
+            .textBox {
                 margin-bottom: .5rem;
-                >div{
+
+                >div {
                     flex-direction: column;
                     gap: 1rem;
                     align-items: start;
-                    span{
+
+                    span {
                         align-self: flex-end;
                     }
                 }
             }
-            .projectBoxWrap{
-                .projectBox{
+
+            .projectBoxWrap {
+                .projectBox {
                     padding: 1rem;
                     flex-direction: column;
                     gap: 2rem;
-                    .projectInfo{
+
+                    .projectInfo {
                         width: 100%;
                     }
                 }
@@ -508,7 +515,7 @@
                 gap: 3rem;
 
                 .projectBox {
-                    
+
 
                     .projectImg {
                         >img {

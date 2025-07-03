@@ -16,6 +16,29 @@
         z-index: 999;
     }
 
+    .archiveDesc {
+        width: 100vw;
+        height: 100vh;
+        background-color: #111;
+        color: #ddd;
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "NanumSquare";
+            text-align: center;
+            line-height: 1.5;
+        }
+        span{
+            position: absolute;
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
     .archive {
         width: 100%;
         height: 100vh;
@@ -86,19 +109,19 @@
 
                 .description {
                     p {
-                        font-size: 1.5rem;
                         font-family: "Jura", sans-serif;
+                        margin-bottom: .5rem;
                     }
 
                     span {
-                        font-size: .9rem;
+                        font-size: 1.3rem;
                     }
                 }
 
                 .addDate {
                     p {
-                        font-size: 1.5rem;
                         font-family: "Jura", sans-serif;
+                        margin-bottom: .5rem;
                     }
 
                     span {

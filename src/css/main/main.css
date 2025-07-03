@@ -33,6 +33,8 @@
   font-weight: 900;
   line-height: 1;
   color: #ddd;
+  font-family: "Jura", sans-serif;
+  letter-spacing: -5px;
 }
 .mainWrap #section01 .section01Size h1 .h1TopWrap {
   display: block;
