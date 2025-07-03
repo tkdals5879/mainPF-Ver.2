@@ -1,0 +1,135 @@
+.archiveWrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.archiveWrap h1 {
+  display: inline-block;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5vw;
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+  color: #ddd;
+  z-index: 999;
+}
+.archiveWrap .archive {
+  width: 100%;
+  height: 100vh;
+  color: #ddd;
+  position: relative;
+}
+.archiveWrap .archive .wrapper {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  backdrop-filter: blur(3px) brightness(0.7);
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5019607843);
+}
+.archiveWrap .archive .wrapper h2 {
+  display: inline-block;
+  font-size: 7vw;
+  color: #ddd;
+  margin-bottom: 5rem;
+  font-family: "Jura", sans-serif;
+  letter-spacing: -3px;
+}
+.archiveWrap .archive .wrapper .notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid #ddd;
+}
+.archiveWrap .archive .wrapper .notice .type {
+  font-family: "Jura", sans-serif;
+}
+.archiveWrap .archive .wrapper .notice .type p {
+  font-size: 1.4rem;
+  color: #6B2699;
+  letter-spacing: 3px;
+}
+.archiveWrap .archive .wrapper .notice .type span {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.archiveWrap .archive .wrapper .notice .count p {
+  font-family: "Jura", sans-serif;
+}
+.archiveWrap .archive .wrapper .notice .count p .accent {
+  font-size: 1.5rem;
+  color: #6B2699;
+}
+.archiveWrap .archive .wrapper .information {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.archiveWrap .archive .wrapper .information .description p {
+  font-size: 1.5rem;
+  font-family: "Jura", sans-serif;
+}
+.archiveWrap .archive .wrapper .information .description span {
+  font-size: 0.9rem;
+}
+.archiveWrap .archive .wrapper .information .addDate p {
+  font-size: 1.5rem;
+  font-family: "Jura", sans-serif;
+}
+.archiveWrap .archive .wrapper .information .addDate span {
+  font-size: 0.9rem;
+}
+.archiveWrap .archive .wrapper .viewWrap {
+  display: flex;
+  gap: 0.3rem;
+  width: fit-content;
+  margin-top: auto;
+  margin-left: auto;
+}
+.archiveWrap .archive .wrapper .viewWrap button {
+  background-color: #312B40;
+  color: #ddd;
+  transition: 0.3s;
+  border: none;
+}
+.archiveWrap .archive .wrapper .viewWrap .view {
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-family: "Jura", sans-serif;
+  letter-spacing: 1px;
+}
+.archiveWrap .archive .wrapper .viewWrap .arrow {
+  padding: 1rem 1.1rem;
+  border-radius: 100%;
+}
+.archiveWrap .archive .wrapper .viewWrap:hover .view {
+  border-radius: 30px;
+  background-color: #6A4EBD;
+}
+.archiveWrap .archive .wrapper .viewWrap:hover .arrow {
+  scale: 0.9;
+  background-color: #6A4EBD;
+}
+.archiveWrap .ClipVisual {
+  background-image: url(../../../public//clipVisual.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.archiveWrap .test {
+  background-image: url(../../../public/portfolioVer_2.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=archive.css.map */

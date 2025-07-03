@@ -39,7 +39,7 @@ footer .contactAndNavWrap .contact > a {
   transition: 0.3s;
 }
 footer .contactAndNavWrap .contact > a:hover {
-  color: #00800A;
+  color: #6B2699;
 }
 footer .contactAndNavWrap .rightWrap {
   grid-column: 9/span 3;
@@ -70,7 +70,7 @@ footer .contactAndNavWrap .rightWrap .footerNav > div > p {
   cursor: pointer;
 }
 footer .contactAndNavWrap .rightWrap .footerNav > div > p:hover {
-  color: #00800A;
+  color: #6B2699;
 }
 footer .contactAndNavWrap .rightWrap .footerToolWrap {
   display: flex;

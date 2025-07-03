@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import Main from './pages/Main';
 import About from './pages/About';
 import Works from './pages/Works';
+import Archive from './pages/Archive';
 
 function AnimatedRoutes({showIntro}) {
 
@@ -17,6 +18,7 @@ function AnimatedRoutes({showIntro}) {
             case '/': return <Main showIntro={showIntro} />
             case '/about': return <About />
             case '/works': return <Works />
+            case '/archive': return <Archive />
             default: return <Main />
         }
     }
