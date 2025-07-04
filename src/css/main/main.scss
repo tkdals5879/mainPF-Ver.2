@@ -674,6 +674,14 @@
 
 @media (max-width : 767px) {
     .mainWrap {
+        #section01{
+            .section01Size{
+                h1{
+                    padding-inline: 1rem;
+                    letter-spacing: normal;
+                }
+            }
+        }
         #section02 {
             .top{
                 flex-direction: column;
