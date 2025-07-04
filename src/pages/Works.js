@@ -139,35 +139,24 @@ function Works() {
 
                 <section id="Works_section03" className="worksContainer">
                     <span className="worksNumber">03</span>
-                    <h2 className="worksTitle">Portfolio Ver.1</h2>
-                    <a href="https://sangmin-mainsite.netlify.app/" target='_blank' rel="noreferrer">
-                        <figure>
-                            <img src="/portfolioVer_1.webp" alt="portfolioVer_1" />
-                        </figure>
-                    </a>
-                    <p className="description">처음 제작한 개인 포트폴리오 사이트</p>
-                </section>
-
-                <section id="Works_section04" className="worksContainer">
-                    <span className="worksNumber LTR">04</span>
                     <h2 className="worksTitle">Weather Project</h2>
                     <a href="https://sangmin-weatherproject.netlify.app" target='_blank' rel="noreferrer">
                         <figure>
                             <img src="weatherProjectImg.webp" alt="weatherProjectImg" />
                         </figure>
                     </a>
-                    <p className="description LTR">현재위치 및 검색한 도시의 날씨와 뉴스를 알려주는 사이트</p>
+                    <p className="description">현재위치 및 검색한 도시의 날씨와 뉴스를 알려주는 사이트</p>
                 </section>
 
-                <section id="Works_section05" className="worksContainer">
-                    <span className="worksNumber">05</span>
+                <section id="Works_section04" className="worksContainer">
+                    <span className="worksNumber LTR">04</span>
                     <h2 className="worksTitle">Clone Coding</h2>
                     <a href="https://clone-mimodern.netlify.app" target='_blank' rel="noreferrer">
                         <figure>
                             <img src="cloneCodingImg.webp" alt="cloneCodingImg" />
                         </figure>
                     </a>
-                    <p className="description">미모던 피부과 사이트를 클론코딩한 사이트</p>
+                    <p className="description LTR">미모던 피부과 사이트를 클론코딩한 사이트</p>
                 </section>
             </main>
         </div>
