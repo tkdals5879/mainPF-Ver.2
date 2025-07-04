@@ -293,7 +293,7 @@
   color: #222;
   position: relative;
   background-image: url(/public//main_aboutBg.webp);
-  background-position-y: -100px;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -307,7 +307,7 @@
 }
 #section04 .textBox {
   position: absolute;
-  top: 30%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -472,8 +472,46 @@
 }
 
 @media (max-width: 1024px) {
+  .mainWrap #section02 {
+    height: auto;
+    padding: 3rem 1rem 1rem;
+  }
+  .mainWrap #section02 .title {
+    font-size: 1.2rem;
+  }
+  .mainWrap #section02 .title .circle {
+    width: 8px;
+    height: 8px;
+  }
+  .mainWrap #section02 .top {
+    margin: 2rem 0;
+  }
+  .mainWrap #section02 .top figure {
+    min-width: 150px;
+  }
+  .mainWrap #section02 .top .textBox h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .mainWrap #section02 .top .textBox p {
+    font-size: 0.9rem;
+    padding-left: 0;
+  }
+  .mainWrap #section02 .top .textBox p::before {
+    width: 3px;
+    height: 10px;
+    margin-right: 0.3rem;
+  }
   .mainWrap #section03 .textBox {
     margin-bottom: 0.5rem;
+  }
+  .mainWrap #section03 .textBox h2 {
+    font-size: 1.2rem;
+    gap: 0.5rem;
+  }
+  .mainWrap #section03 .textBox h2 .circle {
+    width: 8px;
+    height: 8px;
   }
   .mainWrap #section03 .textBox > div {
     flex-direction: column;
@@ -493,19 +531,40 @@
   }
 }
 @media (max-width: 767px) {
+  .mainWrap #section02 .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainWrap #section02 .top .textBox {
+    order: -1;
+  }
+  .mainWrap #section02 .bottom {
+    flex-direction: column;
+  }
+  .mainWrap #section02 .bottom .education h3 {
+    font-size: 1rem;
+  }
+  .mainWrap #section02 .bottom .education h3::after {
+    width: 20vw;
+  }
+  .mainWrap #section02 .bottom .education .education_item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+  .mainWrap #section02 .bottom .toolWrap h3 {
+    font-size: 1rem;
+  }
+  .mainWrap #section02 .bottom .toolWrap h3::after {
+    width: 20vw;
+  }
   .mainWrap #section03 > div {
     padding-inline: 20px;
   }
   .mainWrap #section03 .textBox {
     padding-top: 5rem;
-  }
-  .mainWrap #section03 .textBox h2 {
-    font-size: 1.2rem;
-    gap: 0.5rem;
-  }
-  .mainWrap #section03 .textBox h2 .circle {
-    width: 8px;
-    height: 8px;
   }
   .mainWrap #section03 .textBox > div p {
     font-size: 1rem;

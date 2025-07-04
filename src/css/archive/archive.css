@@ -153,4 +153,38 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1024px) {
+  .archiveWrap .archiveDesc span {
+    top: 80%;
+  }
+  .archiveWrap .archive .wrapper .viewWrap {
+    margin: 0 auto;
+    margin-top: auto;
+  }
+  .archiveWrap .archive .wrapper .viewWrap .arrow {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .archiveWrap .archive .wrapper {
+    padding: 5rem 0.5rem 1rem;
+  }
+  .archiveWrap .archive .wrapper h2 {
+    font-size: 2rem;
+    letter-spacing: normal;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .archiveWrap .archive .wrapper .notice {
+    border-bottom: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+  .archiveWrap .archive .wrapper .information .description span {
+    font-size: 0.9rem;
+  }
+}
+
 /*# sourceMappingURL=archive.css.map */

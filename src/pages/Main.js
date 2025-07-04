@@ -224,7 +224,7 @@ function Main({ showIntro }) {
                     <div className="bottom">
                         <div className="education">
                             <h3>Education</h3>
-                            <div className='education_tem'>
+                            <div className='education_item'>
                                 <p>2024.02 계명대학교 도시계획학과 졸업</p>
                                 <p>2025.03 (산대특) AI&React 활용 스마트시티웨더 구축 리퍼블셔 양성과정 수료 </p>
                             </div>

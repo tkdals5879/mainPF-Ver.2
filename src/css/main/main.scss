@@ -374,7 +374,7 @@
     color: #222;
     position: relative;
     background-image: url(/public//main_aboutBg.webp);
-    background-position-y: -100px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -389,7 +389,7 @@
 
     .textBox {
         position: absolute;
-        top: 30%;
+        top: 23%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -591,9 +591,60 @@
 
 @media (max-width : 1024px) {
     .mainWrap {
+        #section02 {
+            height: auto;
+            padding: 3rem 1rem 1rem;
+
+            .title {
+                font-size: 1.2rem;
+
+                .circle {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+
+            .top {
+                margin: 2rem 0;
+
+                figure {
+                    min-width: 150px;
+                }
+
+                .textBox {
+
+                    h2 {
+                        font-size: 1.2rem;
+                        margin-bottom: .5rem;
+                    }
+
+                    p {
+                        font-size: .9rem;
+                        padding-left: 0;
+
+                        &::before {
+                            width: 3px;
+                            height: 10px;
+                            margin-right: .3rem;
+                        }
+                    }
+                }
+            }
+        }
+
         #section03 {
             .textBox {
                 margin-bottom: .5rem;
+
+                h2 {
+                    font-size: 1.2rem;
+                    gap: .5rem;
+
+                    .circle {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
 
                 >div {
                     flex-direction: column;
@@ -623,6 +674,42 @@
 
 @media (max-width : 767px) {
     .mainWrap {
+        #section02 {
+            .top{
+                flex-direction: column;
+                align-items: center;
+                .textBox{
+                    order: -1;
+                }
+            }
+            .bottom{
+                flex-direction: column;
+                .education{
+                    h3{
+                        font-size: 1rem;
+                        &::after{
+                            width: 20vw;
+                        }
+                    }
+                    .education_item{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .3rem;
+                        font-size: .9rem;
+                        line-height: 1.2;
+                    }
+                }
+                .toolWrap{
+                    h3{
+                        font-size: 1rem;
+                        &::after{
+                            width: 20vw;
+                        }
+                    }
+                }
+            }
+        }
+
         #section03 {
             >div {
                 padding-inline: 20px;
@@ -630,16 +717,6 @@
 
             .textBox {
                 padding-top: 5rem;
-
-                h2 {
-                    font-size: 1.2rem;
-                    gap: .5rem;
-
-                    .circle {
-                        width: 8px;
-                        height: 8px;
-                    }
-                }
 
                 >div {
                     p {

@@ -76,7 +76,7 @@ function Archive() {
             {archiveList.map((el, idx) => (
                 <div className={`archive ${el.name}`} key={idx}>
                     <div className='wrapper'>
-                        <h2>{el.name}</h2>
+                        <h2>{el.title}</h2>
                         <div className='notice'>
                             <div className='type'>
                                 <p>type</p>
