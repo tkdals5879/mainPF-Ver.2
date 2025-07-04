@@ -36,12 +36,15 @@ function Footer() {
                         <ul>
                             <li><img src="/html.svg" alt="htmlImg" /></li>
                             <li><img src="/css.svg" alt="cssImg" /></li>
+                            <li><img src="/js.svg" alt="cssImg" /></li>
                             <li><img src="react.svg" alt="reactImg" /></li>
-                            <li><img src="framerMotion.svg" alt="framerMotionImg" /></li>
                             <li><img src="redux.svg" alt="reduxImg" /></li>
+                            <li><img src="sass.svg" alt="sassImg" /></li>
+                            <li><img src="figma.svg" alt="figmaImg" /></li>
                             <li><img src="github.svg" alt="gitHubImg" /></li>
                             <li><img src="netlify.svg" alt="netlifyImg" /></li>
-                            <li><img src="figma.svg" alt="figmaImg" /></li>
+                            <li><img src="photoshop.svg" alt="photoshopImg" /></li>
+                            <li><img src="illustrator.svg" alt="illustratorImg" /></li>
                         </ul>
                     </div>
                 </div>

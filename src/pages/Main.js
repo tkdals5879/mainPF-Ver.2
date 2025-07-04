@@ -22,8 +22,8 @@ function Main({ showIntro }) {
         return () => clearTimeout(delay)
     }, [show]);
 
-    const topText = "PORTFOLIO VER.2".split("")
-    const bottomText = "DEVELOPER".split("")
+    const topText = "WEB PUBLISHER".split("")
+    const bottomText = "SANG MIN".split("")
 
     // 최상단에서의 스크롤막기
     useEffect(() => {
@@ -49,7 +49,7 @@ function Main({ showIntro }) {
     useEffect(() => {
         const video = document.querySelector("video");
         video?.play();
-        
+
         gsap.set(".reveal", { opacity: 0, y: -30 })
         const textAni = gsap.timeline();
         textAni.to(".reveal", {
@@ -65,15 +65,15 @@ function Main({ showIntro }) {
     }, [showIntro])
 
 
-    // section03 box timeline gsap ▼
+    // section04 box timeline gsap ▼
     useEffect(() => {
         const ani1 = gsap.timeline();
-        ani1.from('#section03 .gsapBoxWrap .boxA', { y: -100, autoAlpha: 0 })
-            .from('#section03 .gsapBoxWrap .boxB', { y: -100, autoAlpha: 0 })
-            .from('#section03 .gsapBoxWrap .boxC', { y: -100, autoAlpha: 0 })
+        ani1.from('#section04 .gsapBoxWrap .boxA', { y: -100, autoAlpha: 0 })
+            .from('#section04 .gsapBoxWrap .boxB', { y: -100, autoAlpha: 0 })
+            .from('#section04 .gsapBoxWrap .boxC', { y: -100, autoAlpha: 0 })
 
         const trigger = ScrollTrigger.create({
-            trigger: '#section03',
+            trigger: '#section04',
             start: "top top",
             end: "+=3000",
             scrub: 1,
@@ -208,8 +208,51 @@ function Main({ showIntro }) {
 
 
 
-                {/* //////////////////////////////////////// section02 (Works) //////////////////////////////////////// */}
+                {/* //////////////////////////////////////// section02 ( about ) //////////////////////////////////////// */}
                 <section id='section02'>
+                    <h2 className='title'><span className="circle"></span>Profile</h2>
+                    <div className="top">
+                        <figure>
+                            <img src="./photo.webp" alt="IDphoto" />
+                        </figure>
+                        <div className="textBox">
+                            <h2>안녕하십니까! <br /> 능동적으로 성장하고 적극적으로 도전하는 <br />
+                                신입 웹 퍼블리셔 <span className='accent'>이상민</span> 입니다.</h2>
+                            <p>1999.08.03</p>
+                        </div>
+                    </div>
+                    <div className="bottom">
+                        <div className="education">
+                            <h3>Education</h3>
+                            <div className='education_tem'>
+                                <p>2024.02 계명대학교 도시계획학과 졸업</p>
+                                <p>2025.03 (산대특) AI&React 활용 스마트시티웨더 구축 리퍼블셔 양성과정 수료 </p>
+                            </div>
+                        </div>
+                        <div className="toolWrap">
+                            <h3>Can Use</h3>
+                            <div className='list'>
+                                <div><img src="./html.svg" alt="html" /></div>
+                                <div><img src="./css.svg" alt="css" /></div>
+                                <div><img src="./js.svg" alt="js" /></div>
+                                <div><img src="./react.svg" alt="react" /></div>
+                                <div><img src="./redux.svg" alt="redux" /></div>
+                                <div><img src="./sass.svg" alt="sass" /></div>
+                                <div><img src="./figma.svg" alt="figma" /></div>
+                                <div><img src="./github.svg" alt="github" /></div>
+                                <div><img src="./netlify.svg" alt="netlify" /></div>
+                                <div><img src="./photoshop.svg" alt="photoshop" /></div>
+                                <div><img src="./illustrator.svg" alt="illustrator" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </section >
+                {/* //////////////////////////////////////// section02 ( about ) //////////////////////////////////////// */}
+
+
+
+                {/* //////////////////////////////////////// section03 (Works) //////////////////////////////////////// */}
+                <section id='section03'>
                     <div className='textBox'>
                         <h2><span className='circle'></span>Works</h2>
                         <div>
@@ -267,53 +310,6 @@ function Main({ showIntro }) {
                             </div>
                         </div>
                         {/* //////////////////// KBO Project //////////////////// */}
-
-                        {/* //////////////////// PortFolio Ver.1 //////////////////// */}
-                        <div className='projectBox'>
-                            <div className='projectImg'>
-                                <img src="/portfolioVer_1.webp" alt="portfolioVer_1" />
-                                <div className='toolWrap'>
-                                    <div><img src="/html.svg" alt="htmlImg" /></div>
-                                    <div><img src="/css.svg" alt="cssImg" /></div>
-                                    <div><img src="react.svg" alt="reactImg" /></div>
-                                    <div><img src="framerMotion.svg" alt="framerMotionImg" /></div>
-                                    <div><img src="redux.svg" alt="reduxImg" /></div>
-                                    <div><img src="github.svg" alt="gitHubImg" /></div>
-                                    <div><img src="netlify.svg" alt="netlifyImg" /></div>
-                                    <div><img src="figma.svg" alt="figmaImg" /></div>
-                                </div>
-                            </div>
-                            <div className='projectInfo'>
-                                <div className='projectInfo_name'>
-                                    <h2>PortFolio Ver.1</h2>
-                                </div>
-                                <div className='projectInfo_text'>
-                                    <div className='IPDWrap'>
-                                        <div className='introduce'>
-                                            <h3>Introduce.</h3>
-                                            <p>처음 제작한 개인 포트폴리오 사이트</p>
-                                        </div>
-                                        <div className='point'>
-                                            <h3>Point.</h3>
-                                            <p>OTT 플랫폼 디자인 <br />
-                                                자연스러운 화면전환</p>
-                                        </div>
-                                        <div className='dev'>
-                                            <h3>Dev.</h3>
-                                            <p>1인개발 / 프론트엔드 100% <br />
-                                                작업기간 : 4주</p>
-                                        </div>
-                                    </div>
-                                    <a href="https://sangmin-mainsite.netlify.app/" target='_blank' rel="noreferrer">
-                                        <div className='viewWrap'>
-                                            <button className='view'>View</button>
-                                            <button className='viewArrow'><FontAwesomeIcon icon={faArrowRight} /></button>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        {/* //////////////////// PortFolio Ver.1 //////////////////// */}
 
 
                         {/* //////////////////// Weather Project //////////////////// */}
@@ -405,18 +401,17 @@ function Main({ showIntro }) {
                     {/* //////////////////// Clone Cording //////////////////// */}
 
                 </section>
-                {/* //////////////////////////////////////// section02 (Works) //////////////////////////////////////// */}
+                {/* //////////////////////////////////////// section03 (Works) //////////////////////////////////////// */}
 
 
 
-                {/* //////////////////////////////////////// section03 (About) //////////////////////////////////////// */}
-                <section id='section03'>
+                {/* //////////////////////////////////////// section04 //////////////////////////////////////// */}
+                <section id='section04'>
                     <div className='textBox'>
-                        <h3><span className='circle'></span> About</h3>
                         <p>배움에 열정을 더해, 하루하루 성장하고있습니다 <br />
-                            프론트엔드 개발자를 향한 여정은 계속 진행 중이며 <br />
+                            능동적이며 적극적으로 <br />
                             매일 한 걸음씩, 더 나은 코드를 향해 <br />
-                            꾸준히 나아갑니다.</p>
+                            꾸준히 공부합니다.</p>
                     </div>
                     <div className='gsapBoxWrap'>
                         <div className='about_innerBox boxA'>
@@ -451,16 +446,64 @@ function Main({ showIntro }) {
                         </div>
                     </div>
                 </section>
-                {/* //////////////////////////////////////// section03 (About) //////////////////////////////////////// */}
-            </main>
+                {/* //////////////////////////////////////// section04 //////////////////////////////////////// */}
+            </main >
 
 
 
             {/* //////////////////////////////////////// footer //////////////////////////////////////// */}
-            <Footer />
+            < Footer />
             {/* //////////////////////////////////////// footer //////////////////////////////////////// */}
-        </div>
+        </div >
     )
 }
 
 export default Main;
+
+//  <section id='section02'>
+//                     <div className='text'>
+//                         <span className='circle'></span>
+//                         <h2>Profile</h2>
+//                     </div>
+//                     <div className='profileWrap'>
+//                         <div className='img'>
+//                             <figure>
+//                                 <img src="./photo.webp" alt="myPhoto" />
+//                             </figure>
+//                         </div>
+//                         <div className='infoWrap'>
+
+//                             <div className="top">
+//                                 <h2>안녕하십니까! <br/> 능동적으로 성장하고 적극적으로 도전하는 <br />
+//                                     신입 웹 퍼블리셔 <span className='accent'>이상민</span> 입니다.</h2>
+//                             </div>
+
+//                             <div className='bottom'>
+
+//                                 <div className="education">
+//                                     <h3>Education</h3>
+//                                     <div className='list'>
+//                                         <p>2024.02 계명대학교 도시계획학과 졸업</p>
+//                                         <p>2025.03 (산대특) AI&React 활용 스마트시티웨더 구축 리퍼블셔 양성과정 수료</p>
+//                                     </div>
+//                                 </div>
+//                                 <div className="toolWrap">
+//                                     <h3>Can Use</h3>
+//                                     <div className='list'>
+//                                         <div><img src="./html.svg" alt="html" /></div>
+//                                         <div><img src="./css.svg" alt="css" /></div>
+//                                         <div><img src="./js.svg" alt="js" /></div>
+//                                         <div><img src="./react.svg" alt="react" /></div>
+//                                         <div><img src="./redux.svg" alt="redux" /></div>
+//                                         <div><img src="./sass.svg" alt="sass" /></div>
+//                                         <div><img src="./figma.svg" alt="figma" /></div>
+//                                         <div><img src="./github.svg" alt="github" /></div>
+//                                         <div><img src="./netlify.svg" alt="netlify" /></div>
+//                                         <div><img src="./photoshop.svg" alt="photoshop" /></div>
+//                                         <div><img src="./illustrator.svg" alt="illustrator" /></div>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </section>
