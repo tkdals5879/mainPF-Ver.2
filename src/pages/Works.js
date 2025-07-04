@@ -115,7 +115,7 @@ function Works() {
         <div className="worksWrap">
             <main>
                 <h2 className="mainText">Works</h2>
-                <section id="section01" className="worksContainer">
+                <section id="Works_section01" className="worksContainer">
                     <span className="worksNumber">01</span>
                     <h2 className="worksTitle">Portfolio Ver.2</h2>
                     <a href="https://ver2-portfolio.netlify.app/" target="_blank" rel="noreferrer">
@@ -126,7 +126,7 @@ function Works() {
                     <p className="description">디자인을 디벨롭한 두번째 포트폴리오 사이트</p>
                 </section>
 
-                <section id="section02" className="worksContainer">
+                <section id="Works_section02" className="worksContainer">
                     <span className="worksNumber LTR">02</span>
                     <h2 className="worksTitle">KBO Project</h2>
                     <a href="https://kboproject.netlify.app/" target='_blank' rel="noreferrer">
@@ -137,7 +137,7 @@ function Works() {
                     <p className="description LTR">국내 프로야구 리그 (KBO)에 관련된 정보를 제공하는 사이트</p>
                 </section>
 
-                <section id="section03" className="worksContainer">
+                <section id="Works_section03" className="worksContainer">
                     <span className="worksNumber">03</span>
                     <h2 className="worksTitle">Portfolio Ver.1</h2>
                     <a href="https://sangmin-mainsite.netlify.app/" target='_blank' rel="noreferrer">
@@ -148,7 +148,7 @@ function Works() {
                     <p className="description">처음 제작한 개인 포트폴리오 사이트</p>
                 </section>
 
-                <section id="section04" className="worksContainer">
+                <section id="Works_section04" className="worksContainer">
                     <span className="worksNumber LTR">04</span>
                     <h2 className="worksTitle">Weather Project</h2>
                     <a href="https://sangmin-weatherproject.netlify.app" target='_blank' rel="noreferrer">
@@ -159,7 +159,7 @@ function Works() {
                     <p className="description LTR">현재위치 및 검색한 도시의 날씨와 뉴스를 알려주는 사이트</p>
                 </section>
 
-                <section id="section05" className="worksContainer">
+                <section id="Works_section05" className="worksContainer">
                     <span className="worksNumber">05</span>
                     <h2 className="worksTitle">Clone Coding</h2>
                     <a href="https://clone-mimodern.netlify.app" target='_blank' rel="noreferrer">
