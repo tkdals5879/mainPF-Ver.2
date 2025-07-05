@@ -45,7 +45,7 @@ function Main({ showIntro }) {
     ////////////////////////////////////// gsap
     gsap.registerPlugin(ScrollTrigger);
 
-    // section01 mainText gsap ▼
+    // section01 메인텍스트 > 랜덤으로 드롭다운되는 효과 ▼
     useEffect(() => {
         const video = document.querySelector("video");
         video?.play();
@@ -63,6 +63,38 @@ function Main({ showIntro }) {
             },
         });
     }, [showIntro])
+
+    // 스크롤에따른 자기소개글씨 채워지기
+    useEffect(() => {
+
+        const textAni = gsap.to(".fillText", {
+            backgroundPosition: 0,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".fillText",
+                start: "top 80%",
+                end: "bottom 40%",
+                scrub: 1,
+            }
+        })
+
+        const accentAni = gsap.to(".accent",{
+            backgroundPosition:0,
+            ease:"none",
+            scrollTrigger:{
+                trigger:".accent",
+                start:"top 90%",
+                end:"bottom 60%",
+                scrub:1,
+            }
+        });
+
+        return() => {
+            textAni.kill();
+            accentAni.kill();
+        }
+    }, [])
+
 
 
     // section04 box timeline gsap ▼
@@ -216,8 +248,9 @@ function Main({ showIntro }) {
                             <img src="./photo.webp" alt="IDphoto" />
                         </figure>
                         <div className="textBox">
-                            <h2>안녕하십니까! <br /> 능동적으로 성장하고 적극적으로 도전하는 <br />
-                                신입 웹 퍼블리셔 <span className='accent'>이상민</span> 입니다.</h2>
+                            <h2 className='fillText'>안녕하십니까! </h2>
+                            <h2 className='fillText'>능동적으로 성장하고 적극적으로 도전하는</h2>
+                            <h2 className='fillText'> 신입 웹 퍼블리셔 <span className='accent'>이상민</span> 입니다.</h2>
                             <p>1999.08.03</p>
                         </div>
                     </div>

@@ -89,10 +89,21 @@
   font-size: 3vw;
   font-weight: 500;
   font-family: "NanumSquare";
+  color: rgba(0, 0, 0, 0.03);
+  background: linear-gradient(to right, #222 47%, transparent 53%);
+  background-size: 200%;
+  background-position: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
   margin-bottom: 1rem;
 }
 .mainWrap #section02 .top .textBox h2 .accent {
-  color: #6B2699;
+  color: rgba(107, 38, 153, 0.03);
+  background: linear-gradient(to right, #6B2699 50%, transparent 50%);
+  background-size: 200%;
+  background-position: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .mainWrap #section02 .top .textBox p {
   padding-left: 6px;
