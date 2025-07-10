@@ -6,6 +6,18 @@ import '../css/works/works.css'
 
 function Works() {
 
+    // lenis의 관성 제거로직
+    useEffect(() => {
+        requestAnimationFrame(() => {
+            const lenis = window.__lenis;
+            if (lenis) {
+                lenis.scrollTo(0, { immediate: true });
+                lenis.stop();
+                setTimeout(() => lenis.start(), 50);
+            }
+        });
+    }, []);
+
     // 최상단에서의 스크롤막기
     useEffect(() => {
         const preventScrollUp = (e) => {

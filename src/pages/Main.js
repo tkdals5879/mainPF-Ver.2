@@ -12,6 +12,18 @@ import '../css/main/main.css'
 
 function Main({ showIntro }) {
 
+    // lenis의 관성 제거로직
+    useEffect(() => {
+        requestAnimationFrame(() => {
+            const lenis = window.__lenis;
+            if (lenis) {
+                lenis.scrollTo(0, { immediate: true });
+                lenis.stop();
+                setTimeout(() => lenis.start(), 50);
+            }
+        });
+    }, []);
+
     const [show, setShow] = useState(false);
 
     useEffect(() => {
@@ -75,21 +87,22 @@ function Main({ showIntro }) {
                 start: "top 80%",
                 end: "bottom 40%",
                 scrub: 1,
+                invalidateOnRefresh: true,
             }
         })
 
-        const accentAni = gsap.to(".accent",{
-            backgroundPosition:0,
-            ease:"none",
-            scrollTrigger:{
-                trigger:".accent",
-                start:"top 90%",
-                end:"bottom 60%",
-                scrub:1,
+        const accentAni = gsap.to(".accent", {
+            backgroundPosition: 0,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".accent",
+                start: "top 90%",
+                end: "bottom 60%",
+                scrub: 1,
             }
         });
 
-        return() => {
+        return () => {
             textAni.kill();
             accentAni.kill();
         }
@@ -99,30 +112,29 @@ function Main({ showIntro }) {
 
     // section04 box timeline gsap ▼
     useEffect(() => {
-        const ani1 = gsap.timeline();
-        ani1.from('#section04 .gsapBoxWrap .boxA', { y: -100, autoAlpha: 0 })
-            .from('#section04 .gsapBoxWrap .boxB', { y: -100, autoAlpha: 0 })
-            .from('#section04 .gsapBoxWrap .boxC', { y: -100, autoAlpha: 0 })
+        const ctx = gsap.context(() => {
+            const ani1 = gsap.timeline();
+            ani1.from('#main_section04 .gsapBoxWrap .boxA', { y: -50, autoAlpha: 0 })
+                .from('#main_section04 .gsapBoxWrap .boxB', { y: 50, autoAlpha: 0 })
+                .from('#main_section04 .gsapBoxWrap .boxC', { y: -50, autoAlpha: 0 })
+                .to({}, { duration: 0.3 });
 
-        const trigger = ScrollTrigger.create({
-            trigger: '#section04',
-            start: "top top",
-            end: "+=3000",
-            scrub: 1,
-            pin: true,
-            animation: ani1
-        })
+            ScrollTrigger.create({
+                trigger: '#main_section04',
+                start: "top top",
+                end: "+=5000",
+                scrub: 1,
+                pin: true,
+                animation: ani1
+            });
 
-        ScrollTrigger.refresh()
+            ScrollTrigger.refresh();
+        });
 
-        return () => {
-            ani1.kill();
-            trigger.kill();
-        }
-
+        return () => ctx.revert();
     }, []);
 
-
+    
 
     // object gsap ▼
 
@@ -132,63 +144,62 @@ function Main({ showIntro }) {
 
     // boxA animation ▼
     useEffect(() => {
-        const boxes = objectRef01.current.querySelectorAll("div");
-        const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+        const ctx = gsap.context(() => {
+            const boxes = objectRef01.current.querySelectorAll("div");
+            const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
 
-        boxes.forEach((box, idx) => {
-            tl.to(box,
-                {
+            boxes.forEach((box, idx) => {
+                tl.to(box, {
                     rotate: 360,
                     duration: 1,
                     ease: "power1.inOut",
-
                 }, idx * 0.13);
-        });
+            });
+        }, objectRef01);
 
-        return () => {
-            tl.kill();
-        };
-
+        return () => ctx.revert();
     }, []);
+
 
     // boxB animation ▼
     useEffect(() => {
-        const boxes = objectRef02.current.querySelectorAll("div");
-        const tl = gsap.timeline({ repeat: -1 })
+        const ctx = gsap.context(() => {
+            const boxes = objectRef02.current.querySelectorAll("div");
+            const tl = gsap.timeline({ repeat: -1 });
 
-        boxes.forEach((box, idx) => {
-            tl.to(box, {
-                width: "60%",
-                height: "60%",
-                duration: 1,
-                ease: "power1.inOut"
-            }, idx * 0.2);
-        });
+            boxes.forEach((box, idx) => {
+                tl.to(box, {
+                    width: "60%",
+                    height: "60%",
+                    duration: 1,
+                    ease: "power1.inOut",
+                }, idx * 0.2);
+            });
+        }, objectRef02);
 
-        return () => {
-            tl.kill();
-        };
+        return () => ctx.revert();
+    }, []);
 
-    }, [])
 
 
     // boxC animation ▼
     useEffect(() => {
-        const box = objectRef03.current.querySelector("div");
-        const tl = gsap.timeline({ repeat: -1 })
-        tl.to(box, { height: "16%" })
-            .to(box, { borderRadius: 100 })
-            .to(box, { width: "14%" })
-            .to(box, { height: "60%" })
-            .to(box, { borderRadius: 0 })
-            .to(box, { rotate: 180 })
-            .to(box, { width: "60%" })
+        const ctx = gsap.context(() => {
+            const box = objectRef03.current.querySelector("div");
+            const tl = gsap.timeline({ repeat: -1 });
 
-        return () => {
-            tl.kill();
-        }
+            tl.to(box, { height: "16%" })
+                .to(box, { borderRadius: 100 })
+                .to(box, { width: "14%" })
+                .to(box, { height: "60%" })
+                .to(box, { borderRadius: 0 })
+                .to(box, { rotate: 180 })
+                .to(box, { width: "60%" });
+        }, objectRef03);
 
-    }, [])
+        return () => ctx.revert();
+    }, []);
+
 
     ////////////////////////////////////// gsap
 
@@ -204,7 +215,7 @@ function Main({ showIntro }) {
 
             <main>
                 {/* //////////////////////////////////////// section01 ( main ) //////////////////////////////////////// */}
-                <section id='section01'>
+                <section id='main_section01'>
 
                     <div className='bgVideo'>
                         <video src="/mainBg.mp4" autoPlay loop muted playsInline preload="auto"></video>
@@ -241,7 +252,7 @@ function Main({ showIntro }) {
 
 
                 {/* //////////////////////////////////////// section02 ( about ) //////////////////////////////////////// */}
-                <section id='section02'>
+                <section id='main_section02'>
                     <h2 className='title'><span className="circle"></span>Profile</h2>
                     <div className="top">
                         <figure>
@@ -285,7 +296,7 @@ function Main({ showIntro }) {
 
 
                 {/* //////////////////////////////////////// section03 (Works) //////////////////////////////////////// */}
-                <section id='section03'>
+                <section id='main_section03'>
                     <div className='textBox'>
                         <h2><span className='circle'></span>Works</h2>
                         <div>
@@ -439,7 +450,7 @@ function Main({ showIntro }) {
 
 
                 {/* //////////////////////////////////////// section04 //////////////////////////////////////// */}
-                <section id='section04'>
+                <section id='main_section04'>
                     <div className='textBox'>
                         <p>배움에 열정을 더해, 하루하루 성장하고있습니다 <br />
                             능동적이며 적극적으로 <br />

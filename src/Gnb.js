@@ -14,7 +14,7 @@ function Gnb() {
                 <li className='mainGnb'><Link to="/">Main</Link></li>
                 <li className='aboutGnb'><Link to="/about">About</Link></li>
                 <li className='worksGnb'><Link to="/works">Works</Link></li>
-                <li className='archiveGnb'><Link to="/archive">Archive</Link></li>
+                {/* <li className='archiveGnb'><Link to="/archive">Archive</Link></li> */}
                 <li className='contactGnb' onClick={handleMailTo}>Contact</li>
             </ul>
         </div>

@@ -4,29 +4,29 @@
   color: #fff;
   position: relative;
 }
-.mainWrap #section01 {
+.mainWrap #main_section01 {
   width: 100%;
   position: sticky;
   top: 0;
   left: 0;
   z-index: -1;
 }
-.mainWrap #section01 .bgVideo {
+.mainWrap #main_section01 .bgVideo {
   position: absolute;
   width: 100%;
   top: 4rem;
   left: 0;
   z-index: -1;
 }
-.mainWrap #section01 .bgVideo video {
+.mainWrap #main_section01 .bgVideo video {
   width: 100%;
   height: 100%;
 }
-.mainWrap #section01 .section01Size {
+.mainWrap #main_section01 .section01Size {
   width: 100%;
   height: 100vh;
 }
-.mainWrap #section01 .section01Size h1 {
+.mainWrap #main_section01 .section01Size h1 {
   font-size: 10vw;
   padding-top: 5rem;
   padding-inline: 2rem;
@@ -36,21 +36,21 @@
   font-family: "Jura", sans-serif;
   letter-spacing: -5px;
 }
-.mainWrap #section01 .section01Size h1 .h1TopWrap {
+.mainWrap #main_section01 .section01Size h1 .h1TopWrap {
   display: block;
   white-space: pre;
 }
-.mainWrap #section01 .section01Size h1 .h1BottomWrap {
+.mainWrap #main_section01 .section01Size h1 .h1BottomWrap {
   width: fit-content;
   display: block;
   margin-left: auto;
   white-space: pre;
 }
-.mainWrap #section01 .section01Size h1 .reveal {
+.mainWrap #main_section01 .section01Size h1 .reveal {
   display: inline-block;
   opacity: 0;
 }
-.mainWrap #section02 {
+.mainWrap #main_section02 {
   width: 100%;
   height: 100vh;
   background-color: #ddd;
@@ -60,13 +60,13 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.mainWrap #section02 .title {
+.mainWrap #main_section02 .title {
   display: flex;
   gap: 0.5rem;
   font-weight: 500;
   font-size: 1.8vw;
 }
-.mainWrap #section02 .title .circle {
+.mainWrap #main_section02 .title .circle {
   display: block;
   width: 12px;
   height: 12px;
@@ -74,18 +74,18 @@
   background-color: #00800A;
   border-radius: 100%;
 }
-.mainWrap #section02 .top {
+.mainWrap #main_section02 .top {
   display: flex;
   justify-content: center;
   gap: 5vw;
 }
-.mainWrap #section02 .top figure {
+.mainWrap #main_section02 .top figure {
   width: 20vw;
   border-radius: 20px;
   overflow: hidden;
   opacity: 0.9;
 }
-.mainWrap #section02 .top .textBox h2 {
+.mainWrap #main_section02 .top .textBox h2 {
   font-size: 3vw;
   font-weight: 500;
   font-family: "NanumSquare";
@@ -97,7 +97,7 @@
   background-clip: text;
   margin-bottom: 1rem;
 }
-.mainWrap #section02 .top .textBox h2 .accent {
+.mainWrap #main_section02 .top .textBox h2 .accent {
   color: rgba(107, 38, 153, 0.03);
   background: linear-gradient(to right, #6B2699 50%, transparent 50%);
   background-size: 200%;
@@ -105,11 +105,11 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
-.mainWrap #section02 .top .textBox p {
+.mainWrap #main_section02 .top .textBox p {
   padding-left: 6px;
   font-size: 1.2rem;
 }
-.mainWrap #section02 .top .textBox p::before {
+.mainWrap #main_section02 .top .textBox p::before {
   display: inline-block;
   content: "";
   width: 4px;
@@ -117,15 +117,15 @@
   margin-right: 0.5rem;
   background-color: #6B2699;
 }
-.mainWrap #section02 .bottom {
+.mainWrap #main_section02 .bottom {
   display: flex;
   justify-content: space-around;
   gap: 3rem;
 }
-.mainWrap #section02 .bottom .education h3 {
+.mainWrap #main_section02 .bottom .education h3 {
   font-size: 2vw;
 }
-.mainWrap #section02 .bottom .education h3::after {
+.mainWrap #main_section02 .bottom .education h3::after {
   display: block;
   content: "";
   width: 15vw;
@@ -133,10 +133,10 @@
   background-color: #222;
   margin-bottom: 1rem;
 }
-.mainWrap #section02 .bottom .toolWrap h3 {
+.mainWrap #main_section02 .bottom .toolWrap h3 {
   font-size: 2vw;
 }
-.mainWrap #section02 .bottom .toolWrap h3::after {
+.mainWrap #main_section02 .bottom .toolWrap h3::after {
   display: block;
   content: "";
   width: 15vw;
@@ -144,41 +144,41 @@
   background-color: #222;
   margin-bottom: 1rem;
 }
-.mainWrap #section02 .bottom .toolWrap .list {
+.mainWrap #main_section02 .bottom .toolWrap .list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.mainWrap #section02 .bottom .toolWrap .list > div {
+.mainWrap #main_section02 .bottom .toolWrap .list > div {
   width: 34px;
   height: 32px;
 }
-.mainWrap #section02 .bottom .toolWrap .list > div img {
+.mainWrap #main_section02 .bottom .toolWrap .list > div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-#section03 {
+#main_section03 {
   width: 100%;
   background-color: #ddd;
   color: #222;
   padding-bottom: 15rem;
 }
-#section03 > div {
+#main_section03 > div {
   padding-inline: 2rem;
 }
-#section03 .textBox {
+#main_section03 .textBox {
   margin-bottom: 3rem;
   padding-top: 15rem;
 }
-#section03 .textBox h2 {
+#main_section03 .textBox h2 {
   font-size: 1.8vw;
   display: flex;
   gap: 0.5vw;
   margin-bottom: 1rem;
 }
-#section03 .textBox h2 .circle {
+#main_section03 .textBox h2 .circle {
   display: block;
   width: 12px;
   height: 12px;
@@ -186,27 +186,27 @@
   border-radius: 100%;
   margin-top: 0.5rem;
 }
-#section03 .textBox > div {
+#main_section03 .textBox > div {
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
-#section03 .textBox > div p {
+#main_section03 .textBox > div p {
   color: #333;
   font-size: 2.8vw;
   line-height: 1.2;
   font-family: "NanumSquare";
 }
-#section03 .textBox > div span {
+#main_section03 .textBox > div span {
   font-weight: 500;
 }
-#section03 .projectBoxWrap {
+#main_section03 .projectBoxWrap {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
-#section03 .projectBoxWrap .projectBox {
+#main_section03 .projectBoxWrap .projectBox {
   width: 100%;
   border: 1px dotted #222;
   padding: 3rem;
@@ -214,31 +214,31 @@
   gap: 5rem;
   align-content: center;
 }
-#section03 .projectBoxWrap .projectBox .projectImg {
+#main_section03 .projectBoxWrap .projectBox .projectImg {
   width: 52rem;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-#section03 .projectBoxWrap .projectBox .projectImg > img {
+#main_section03 .projectBoxWrap .projectBox .projectImg > img {
   width: 100%;
   min-width: 450px;
 }
-#section03 .projectBoxWrap .projectBox .projectImg .toolWrap {
+#main_section03 .projectBoxWrap .projectBox .projectImg .toolWrap {
   display: flex;
   gap: 0.5rem;
   justify-content: end;
 }
-#section03 .projectBoxWrap .projectBox .projectImg .toolWrap > div img {
+#main_section03 .projectBoxWrap .projectBox .projectImg .toolWrap > div img {
   width: 32px;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo {
+#main_section03 .projectBoxWrap .projectBox .projectInfo {
   width: 65%;
   display: flex;
   flex-direction: column;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_name {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_name {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -246,58 +246,58 @@
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_name h2 {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_name h2 {
   font-weight: 900;
   font-size: 2.5vw;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .IPDWrap {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .IPDWrap {
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   justify-content: space-between;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .IPDWrap p {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .IPDWrap p {
   font-family: "NanumSquare";
   font-weight: 500;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text a {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text a {
   margin-left: auto;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap {
   display: flex;
   gap: 0.3rem;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap:hover .view {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap:hover .view {
   border-radius: 30px;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap:hover .viewArrow {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap:hover .viewArrow {
   scale: 0.9;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap button {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap button {
   background-color: #222;
   color: #dddddd;
   border-radius: 8px;
   border: none;
   transition: 0.3s;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap .view {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap .view {
   padding: 1rem 2.5rem;
   font-family: "Jura", sans-serif;
   letter-spacing: 1px;
 }
-#section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap .viewArrow {
+#main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .viewWrap .viewArrow {
   padding: 1rem 1.1rem;
   border-radius: 100%;
 }
 
-#section04 {
+#main_section04 {
   width: 100%;
   height: 100vh;
   background-color: #ddd;
@@ -308,7 +308,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-#section04::before {
+#main_section04::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -316,7 +316,7 @@
   backdrop-filter: blur(5px);
   z-index: 1;
 }
-#section04 .textBox {
+#main_section04 .textBox {
   position: absolute;
   top: 23%;
   left: 50%;
@@ -325,15 +325,15 @@
   padding: 2rem;
   z-index: 2;
 }
-#section04 .textBox h3 {
+#main_section04 .textBox h3 {
   font-size: 3vw;
 }
-#section04 .textBox p {
+#main_section04 .textBox p {
   font-size: 1.5vw;
   line-height: 1.5;
   font-family: "NanumSquare";
 }
-#section04 .gsapBoxWrap {
+#main_section04 .gsapBoxWrap {
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -341,7 +341,7 @@
   padding: 3rem 0;
   overflow: hidden;
 }
-#section04 .gsapBoxWrap .about_innerBox {
+#main_section04 .gsapBoxWrap .about_innerBox {
   width: calc(33.3333333333vw - 120px);
   height: 45vh;
   margin-bottom: 2rem;
@@ -352,21 +352,21 @@
   box-shadow: 3px 3px 5px #555;
   z-index: 2;
 }
-#section04 .gsapBoxWrap .about_innerBox .counterNum {
+#main_section04 .gsapBoxWrap .about_innerBox .counterNum {
   font-size: 2rem;
 }
-#section04 .gsapBoxWrap .about_innerBox .object {
+#main_section04 .gsapBoxWrap .about_innerBox .object {
   width: 100%;
   height: 70%;
 }
-#section04 .gsapBoxWrap .boxA {
+#main_section04 .gsapBoxWrap .boxA {
   z-index: 2;
 }
-#section04 .gsapBoxWrap .boxA .object {
+#main_section04 .gsapBoxWrap .boxA .object {
   position: relative;
   margin-bottom: 2rem;
 }
-#section04 .gsapBoxWrap .boxA .object > div {
+#main_section04 .gsapBoxWrap .boxA .object > div {
   width: 60%;
   height: 20px;
   position: absolute;
@@ -375,7 +375,7 @@
   transform: translate(-50%, -50%);
   border-radius: 5px;
 }
-#section04 .gsapBoxWrap .boxA .object > div span {
+#main_section04 .gsapBoxWrap .boxA .object > div span {
   width: 8px;
   height: 8px;
   display: block;
@@ -386,44 +386,44 @@
   background-color: #fff;
   border-radius: 100%;
 }
-#section04 .gsapBoxWrap .boxA .object > div:nth-child(1) {
+#main_section04 .gsapBoxWrap .boxA .object > div:nth-child(1) {
   background-color: #222;
   z-index: 6;
 }
-#section04 .gsapBoxWrap .boxA .object > div:nth-child(2) {
+#main_section04 .gsapBoxWrap .boxA .object > div:nth-child(2) {
   background-color: #333;
   z-index: 5;
 }
-#section04 .gsapBoxWrap .boxA .object > div:nth-child(3) {
+#main_section04 .gsapBoxWrap .boxA .object > div:nth-child(3) {
   background-color: #444;
   z-index: 4;
 }
-#section04 .gsapBoxWrap .boxA .object > div:nth-child(4) {
+#main_section04 .gsapBoxWrap .boxA .object > div:nth-child(4) {
   background-color: #555;
   z-index: 3;
 }
-#section04 .gsapBoxWrap .boxA .object > div:nth-child(5) {
+#main_section04 .gsapBoxWrap .boxA .object > div:nth-child(5) {
   background-color: #666;
   z-index: 2;
 }
-#section04 .gsapBoxWrap .boxA .object > div:nth-child(6) {
+#main_section04 .gsapBoxWrap .boxA .object > div:nth-child(6) {
   background-color: #777;
   z-index: 1;
 }
-#section04 .gsapBoxWrap .boxA .explanation {
+#main_section04 .gsapBoxWrap .boxA .explanation {
   text-align: center;
   font-size: 1.2rem;
   font-family: "Jura", sans-serif;
   font-weight: 900;
 }
-#section04 .gsapBoxWrap .boxB {
+#main_section04 .gsapBoxWrap .boxB {
   z-index: 2;
 }
-#section04 .gsapBoxWrap .boxB .object {
+#main_section04 .gsapBoxWrap .boxB .object {
   position: relative;
   margin-bottom: 2rem;
 }
-#section04 .gsapBoxWrap .boxB .object > div {
+#main_section04 .gsapBoxWrap .boxB .object > div {
   width: 0px;
   height: 0px;
   position: absolute;
@@ -431,42 +431,42 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#section04 .gsapBoxWrap .boxB .object > div:nth-child(1) {
+#main_section04 .gsapBoxWrap .boxB .object > div:nth-child(1) {
   background-color: #555;
   z-index: 1;
 }
-#section04 .gsapBoxWrap .boxB .object > div:nth-child(2) {
+#main_section04 .gsapBoxWrap .boxB .object > div:nth-child(2) {
   background-color: #444;
   z-index: 2;
 }
-#section04 .gsapBoxWrap .boxB .object > div:nth-child(3) {
+#main_section04 .gsapBoxWrap .boxB .object > div:nth-child(3) {
   background-color: #333;
   z-index: 3;
 }
-#section04 .gsapBoxWrap .boxB .object > div:nth-child(4) {
+#main_section04 .gsapBoxWrap .boxB .object > div:nth-child(4) {
   background-color: #222;
   z-index: 4;
 }
-#section04 .gsapBoxWrap .boxB .object > div:nth-child(5) {
+#main_section04 .gsapBoxWrap .boxB .object > div:nth-child(5) {
   width: 60%;
   height: 60%;
   z-index: 0;
   background-color: #222;
 }
-#section04 .gsapBoxWrap .boxB .explanation {
+#main_section04 .gsapBoxWrap .boxB .explanation {
   text-align: center;
   font-size: 1.2rem;
   font-family: "Jura", sans-serif;
   font-weight: 900;
 }
-#section04 .gsapBoxWrap .boxC {
+#main_section04 .gsapBoxWrap .boxC {
   z-index: 2;
 }
-#section04 .gsapBoxWrap .boxC .object {
+#main_section04 .gsapBoxWrap .boxC .object {
   position: relative;
   margin-bottom: 2rem;
 }
-#section04 .gsapBoxWrap .boxC .object > div {
+#main_section04 .gsapBoxWrap .boxC .object > div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -475,7 +475,7 @@
   height: 60%;
   background-color: #222;
 }
-#section04 .gsapBoxWrap .boxC .explanation {
+#main_section04 .gsapBoxWrap .boxC .explanation {
   text-align: center;
   font-size: 1.2rem;
   font-family: "Jura", sans-serif;
@@ -483,166 +483,166 @@
 }
 
 @media (max-width: 1024px) {
-  .mainWrap #section02 {
+  .mainWrap #main_section02 {
     height: auto;
     padding: 3rem 1rem 1rem;
   }
-  .mainWrap #section02 .title {
+  .mainWrap #main_section02 .title {
     font-size: 1.2rem;
   }
-  .mainWrap #section02 .title .circle {
+  .mainWrap #main_section02 .title .circle {
     width: 8px;
     height: 8px;
   }
-  .mainWrap #section02 .top {
+  .mainWrap #main_section02 .top {
     margin: 2rem 0;
   }
-  .mainWrap #section02 .top figure {
+  .mainWrap #main_section02 .top figure {
     min-width: 150px;
   }
-  .mainWrap #section02 .top .textBox h2 {
+  .mainWrap #main_section02 .top .textBox h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
-  .mainWrap #section02 .top .textBox p {
+  .mainWrap #main_section02 .top .textBox p {
     font-size: 0.9rem;
     padding-left: 0;
   }
-  .mainWrap #section02 .top .textBox p::before {
+  .mainWrap #main_section02 .top .textBox p::before {
     width: 3px;
     height: 10px;
     margin-right: 0.3rem;
   }
-  .mainWrap #section03 .textBox {
+  .mainWrap #main_section03 .textBox {
     margin-bottom: 0.5rem;
   }
-  .mainWrap #section03 .textBox h2 {
+  .mainWrap #main_section03 .textBox h2 {
     font-size: 1.2rem;
     gap: 0.5rem;
   }
-  .mainWrap #section03 .textBox h2 .circle {
+  .mainWrap #main_section03 .textBox h2 .circle {
     width: 8px;
     height: 8px;
   }
-  .mainWrap #section03 .textBox > div {
+  .mainWrap #main_section03 .textBox > div {
     flex-direction: column;
     gap: 1rem;
     align-items: start;
   }
-  .mainWrap #section03 .textBox > div span {
+  .mainWrap #main_section03 .textBox > div span {
     align-self: flex-end;
   }
-  .mainWrap #section03 .projectBoxWrap .projectBox {
+  .mainWrap #main_section03 .projectBoxWrap .projectBox {
     padding: 1rem;
     flex-direction: column;
     gap: 2rem;
   }
-  .mainWrap #section03 .projectBoxWrap .projectBox .projectInfo {
+  .mainWrap #main_section03 .projectBoxWrap .projectBox .projectInfo {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .mainWrap #section01 .section01Size h1 {
+  .mainWrap #main_section01 .section01Size h1 {
     padding-inline: 1rem;
     letter-spacing: normal;
   }
-  .mainWrap #section02 .top {
+  .mainWrap #main_section02 .top {
     flex-direction: column;
     align-items: center;
   }
-  .mainWrap #section02 .top .textBox {
+  .mainWrap #main_section02 .top .textBox {
     order: -1;
   }
-  .mainWrap #section02 .bottom {
+  .mainWrap #main_section02 .bottom {
     flex-direction: column;
   }
-  .mainWrap #section02 .bottom .education h3 {
+  .mainWrap #main_section02 .bottom .education h3 {
     font-size: 1rem;
   }
-  .mainWrap #section02 .bottom .education h3::after {
+  .mainWrap #main_section02 .bottom .education h3::after {
     width: 20vw;
   }
-  .mainWrap #section02 .bottom .education .education_item {
+  .mainWrap #main_section02 .bottom .education .education_item {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
     font-size: 0.9rem;
     line-height: 1.2;
   }
-  .mainWrap #section02 .bottom .toolWrap h3 {
+  .mainWrap #main_section02 .bottom .toolWrap h3 {
     font-size: 1rem;
   }
-  .mainWrap #section02 .bottom .toolWrap h3::after {
+  .mainWrap #main_section02 .bottom .toolWrap h3::after {
     width: 20vw;
   }
-  .mainWrap #section03 > div {
+  .mainWrap #main_section03 > div {
     padding-inline: 20px;
   }
-  .mainWrap #section03 .textBox {
+  .mainWrap #main_section03 .textBox {
     padding-top: 5rem;
   }
-  .mainWrap #section03 .textBox > div p {
+  .mainWrap #main_section03 .textBox > div p {
     font-size: 1rem;
     line-height: 1.3;
   }
-  .mainWrap #section03 .textBox > div span {
+  .mainWrap #main_section03 .textBox > div span {
     font-size: 0.7rem;
   }
-  .mainWrap #section03 .projectBoxWrap {
+  .mainWrap #main_section03 .projectBoxWrap {
     gap: 3rem;
   }
-  .mainWrap #section03 .projectBoxWrap .projectBox .projectImg > img {
+  .mainWrap #main_section03 .projectBoxWrap .projectBox .projectImg > img {
     min-width: auto;
   }
-  .mainWrap #section03 .projectBoxWrap .projectBox .projectInfo {
+  .mainWrap #main_section03 .projectBoxWrap .projectBox .projectInfo {
     width: 100%;
   }
-  .mainWrap #section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_name h2 {
+  .mainWrap #main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_name h2 {
     font-size: 1.2rem;
   }
-  .mainWrap #section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text {
+  .mainWrap #main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text {
     gap: 2rem;
   }
-  .mainWrap #section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .IPDWrap h3 {
+  .mainWrap #main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .IPDWrap h3 {
     font-size: 1rem;
     margin-bottom: 0.2rem;
     color: #222;
   }
-  .mainWrap #section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .IPDWrap p {
+  .mainWrap #main_section03 .projectBoxWrap .projectBox .projectInfo .projectInfo_text .IPDWrap p {
     font-size: 0.9rem;
   }
-  .mainWrap #section04 .textBox {
+  .mainWrap #main_section04 .textBox {
     width: 100%;
     padding: 0;
   }
-  .mainWrap #section04 .textBox h3 {
+  .mainWrap #main_section04 .textBox h3 {
     font-size: 1.5rem;
   }
-  .mainWrap #section04 .textBox p {
+  .mainWrap #main_section04 .textBox p {
     font-size: 0.8rem;
   }
-  .mainWrap #section04 .gsapBoxWrap {
+  .mainWrap #main_section04 .gsapBoxWrap {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     padding: 5rem 0 2rem 0;
   }
-  .mainWrap #section04 .gsapBoxWrap .about_innerBox {
+  .mainWrap #main_section04 .gsapBoxWrap .about_innerBox {
     width: 80%;
     height: 33.3333333333%;
     padding: 1rem 1rem 0 1rem;
     margin-bottom: 0;
   }
-  .mainWrap #section04 .gsapBoxWrap .about_innerBox .counterNum {
+  .mainWrap #main_section04 .gsapBoxWrap .about_innerBox .counterNum {
     font-size: 1rem;
   }
-  .mainWrap #section04 .gsapBoxWrap .about_innerBox .object {
+  .mainWrap #main_section04 .gsapBoxWrap .about_innerBox .object {
     margin-bottom: 0;
   }
-  .mainWrap #section04 .gsapBoxWrap .about_innerBox .explanation {
+  .mainWrap #main_section04 .gsapBoxWrap .about_innerBox .explanation {
     font-size: 1rem;
   }
-  .mainWrap #section04 .gsapBoxWrap .boxA .object > div {
+  .mainWrap #main_section04 .gsapBoxWrap .boxA .object > div {
     width: 50%;
     max-width: 190px;
     height: 15px;

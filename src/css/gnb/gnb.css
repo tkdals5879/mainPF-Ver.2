@@ -50,7 +50,7 @@
   transition: 0.3s;
 }
 .gnbWrap ul li:hover {
-  color: #6B2699;
+  color: #555;
 }
 
 @media (max-width: 767px) {

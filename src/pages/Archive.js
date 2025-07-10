@@ -12,6 +12,18 @@ import "../css/archive/archive.css"
 
 function Archive() {
 
+    // lenis의 관성 제거로직
+    useEffect(() => {
+        requestAnimationFrame(() => {
+            const lenis = window.__lenis;
+            if (lenis) {
+                lenis.scrollTo(0, { immediate: true });
+                lenis.stop();
+                setTimeout(() => lenis.start(), 50);
+            }
+        });
+    }, []);
+
     // 최상단에서의 스크롤막기
     useEffect(() => {
         const preventScrollUp = (e) => {
@@ -43,6 +55,7 @@ function Archive() {
                     end: "+=2000",
                     pin: true,
                     scrub: 1,
+                    invalidateOnRefresh: true,
                 }
             });
 
@@ -54,7 +67,7 @@ function Archive() {
                 duration: 0.4
             });
 
-            tl.to({},{duration:0.3})
+            tl.to({}, { duration: 0.3 })
         });
 
         return () => {
@@ -69,9 +82,9 @@ function Archive() {
         <div className='archiveWrap'>
             <h1>Archive</h1>
             <div className='archiveDesc'>
-            <p>특정 기능을 구현하기위한 로직을 실험하는 사이트들 입니다. <br/>
-            이러한 과정을 통해 다양한 효과를 구현하기위해 끊임없이 노력하고있습니다.</p>
-            <span>scroll down <FontAwesomeIcon icon={faCaretDown} /></span>
+                <p>특정 기능을 구현하기위한 로직을 실험하는 사이트들 입니다. <br />
+                    이러한 과정을 통해 다양한 효과를 구현하기위해 끊임없이 노력하고있습니다.</p>
+                <span>scroll down <FontAwesomeIcon icon={faCaretDown} /></span>
             </div>
             {archiveList.map((el, idx) => (
                 <div className={`archive ${el.name}`} key={idx}>

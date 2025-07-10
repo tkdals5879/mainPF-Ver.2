@@ -26,7 +26,7 @@ function Footer() {
                             <p onClick={() => handleNavigate('/')}>Home</p>
                             <p onClick={() => handleNavigate('/about')}>About</p>
                             <p onClick={() => handleNavigate('/works')}>Works</p>
-                            <p onClick={() => handleNavigate('/archive')}>Archive</p>
+                            {/* <p onClick={() => handleNavigate('/archive')}>Archive</p> */}
                         </div>
                     </div>
 

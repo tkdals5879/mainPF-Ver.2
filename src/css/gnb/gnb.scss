@@ -10,6 +10,7 @@
     z-index: 999;
     font-family: "Jura", sans-serif;
 
+
     ul {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -42,7 +43,7 @@
             text-align: right;
         }
 
-        .archiveGnb{
+        .archiveGnb {
             grid-column: 11;
             text-align: right;
         }
@@ -52,10 +53,12 @@
             text-align: right;
             cursor: pointer;
         }
-        li{
+
+        li {
             transition: .3s;
-            &:hover{
-                color: #6B2699;
+
+            &:hover {
+                color: #555;
             }
         }
     }
