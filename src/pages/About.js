@@ -53,15 +53,14 @@ function About() {
 
             if (isMobile) {
                 gsap.to(".sectionRight figure img", {
-                    yPercent: 20,
+                    yPercent: 10,
                     ease: "none",
                     scrollTrigger: {
                         trigger: ".sectionRight",
-                        start: "top 30%",
+                        start: "top 20%",
                         end: "bottom top",
                         scrub: 1,
                         invalidateOnRefresh: true,
-                        markers:true
                     }
                 });
             } else {
@@ -202,6 +201,7 @@ function About() {
                             start: "top 5%",
                             end: "top top",
                             scrub: 1,
+                            markers:true
                         }
                     })
                 });
