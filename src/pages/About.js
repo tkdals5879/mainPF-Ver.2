@@ -49,17 +49,34 @@ function About() {
 
         const rightMotion = gsap.context(() => {
 
-            gsap.to(".sectionRight figure img", {
-                yPercent: 20,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: ".sectionRight",
-                    start: "top top",
-                    end: "bottom top",
-                    scrub: 1,
-                    invalidateOnRefresh: true,
-                }
-            });
+            const isMobile = window.matchMedia("(max-width:1024px)");
+
+            if (isMobile) {
+                gsap.to(".sectionRight figure img", {
+                    yPercent: 20,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: ".sectionRight",
+                        start: "top 30%",
+                        end: "bottom top",
+                        scrub: 1,
+                        invalidateOnRefresh: true,
+                        markers:true
+                    }
+                });
+            } else {
+                gsap.to(".sectionRight figure img", {
+                    yPercent: 20,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: ".sectionRight",
+                        start: "top top",
+                        end: "bottom top",
+                        scrub: 1,
+                        invalidateOnRefresh: true,
+                    }
+                });
+            }
         })
 
         return () => {
@@ -124,9 +141,9 @@ function About() {
                     .to({}, { duration: 0.2 })
                     .to(".wrapC", { y: 20, opacity: 1, rotate: 0, duration: 0.3 })
                     .to({}, { duration: 0.2 })
-                    .to(".wrapA", { y:-100 ,autoAlpha: 0, duration:0.1 })
-                    .to(".wrapB", { y:-100 ,autoAlpha: 0, duration:0.1 }, "<")
-                    .to(".wrapC", { y:-100 ,autoAlpha: 0, duration:0.1 }, "<")
+                    .to(".wrapA", { y: -100, autoAlpha: 0, duration: 0.1 })
+                    .to(".wrapB", { y: -100, autoAlpha: 0, duration: 0.1 }, "<")
+                    .to(".wrapC", { y: -100, autoAlpha: 0, duration: 0.1 }, "<")
                 ScrollTrigger.create({
                     trigger: section03.current,
                     start: "30% 45%",
@@ -172,18 +189,36 @@ function About() {
     // section04 이미지 인터랙션
     useEffect(() => {
         const ctx = gsap.context(() => {
-            gsap.utils.toArray(".myPicture").forEach((el) => {
-                gsap.to(el, {
-                    yPercent: -30,
-                    autoAlpha: 0,
-                    scrollTrigger: {
-                        trigger: el,
-                        start: "top 10%",
-                        end: "top top",
-                        scrub: 1,
-                    }
-                })
-            });
+
+            const isMobile = window.matchMedia("(max-width:1024px").matches;
+
+            if (isMobile) {
+                gsap.utils.toArray(".myPicture").forEach((el) => {
+                    gsap.to(el, {
+                        yPercent: -30,
+                        autoAlpha: 0,
+                        scrollTrigger: {
+                            trigger: el,
+                            start: "top 5%",
+                            end: "top top",
+                            scrub: 1,
+                        }
+                    })
+                });
+            } else {
+                gsap.utils.toArray(".myPicture").forEach((el) => {
+                    gsap.to(el, {
+                        yPercent: -30,
+                        autoAlpha: 0,
+                        scrollTrigger: {
+                            trigger: el,
+                            start: "top 10%",
+                            end: "top top",
+                            scrub: 1,
+                        }
+                    })
+                });
+            }
         });
 
         return () => {
