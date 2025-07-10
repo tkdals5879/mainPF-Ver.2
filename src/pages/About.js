@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import Footer from '../component/Footer';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all'
