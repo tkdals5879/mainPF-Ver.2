@@ -52,17 +52,7 @@ function About() {
             const isMobile = window.matchMedia("(max-width:1024px)");
 
             if (isMobile) {
-                gsap.to(".sectionRight figure img", {
-                    yPercent: 10,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: ".sectionRight",
-                        start: "top 20%",
-                        end: "bottom top",
-                        scrub: 1,
-                        invalidateOnRefresh: true,
-                    }
-                });
+                return ;
             } else {
                 gsap.to(".sectionRight figure img", {
                     yPercent: 20,
@@ -192,19 +182,7 @@ function About() {
             const isMobile = window.matchMedia("(max-width:1024px").matches;
 
             if (isMobile) {
-                gsap.utils.toArray(".myPicture").forEach((el) => {
-                    gsap.to(el, {
-                        yPercent: -30,
-                        autoAlpha: 0,
-                        scrollTrigger: {
-                            trigger: el,
-                            start: "top 5%",
-                            end: "top top",
-                            scrub: 1,
-                            markers:true
-                        }
-                    })
-                });
+                return ;
             } else {
                 gsap.utils.toArray(".myPicture").forEach((el) => {
                     gsap.to(el, {
